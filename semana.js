@@ -301,13 +301,25 @@ class SemanaManager {
             },
             
             // Resto de semanas (11-30) con contenido básico
-            11: { 
-                titulo: "Verbos Contractos y Voz Pasiva", 
-                tema: "Contracción vocálica y pasiva básica", 
-                recursos: [
-                    { tipo: 'html', titulo: 'Contenido semana 11', url: 'recursos_semana11.html', icono: '📚' }
-                ] 
-            },
+         11: {
+    titulo: "Verbos Contractos, Voz Pasiva y Voz Media",
+    tema: "Presente Activo Indicativo - Verbos Contractos y Voces",
+    recursos: [
+        { tipo: 'html', titulo: 'Introducción a los contractos', url: 'semanas/semana 11/HTML/1. introducción a los contractos.html', icono: '1️⃣' },
+        { tipo: 'html', titulo: 'Reglas de contracción', url: 'semanas/semana 11/HTML/2.reglas de contracción.html', icono: '2️⃣' },
+        { tipo: 'html', titulo: 'Paradigma de los contractos y resumen', url: 'semanas/semana 11/HTML/3. paradigma de los contractos y resumen.html', icono: '3️⃣' },
+        { tipo: 'html', titulo: 'Verbos pasivos', url: 'semanas/semana 11/HTML/4. verbos pasivos.html', icono: '4️⃣' },
+        { tipo: 'html', titulo: 'Voz media', url: 'semanas/semana 11/HTML/5.voz media.html', icono: '5️⃣' },
+        { tipo: 'html', titulo: 'Vocabulario semana 11', url: 'semanas/semana 11/HTML/6. Vocabulario11.html', icono: '📖' },
+        { tipo: 'examen', titulo: 'Examen Semana 11', url: '', icono: '📝' }
+    ],
+    juegos: [
+        { titulo: 'Empareja las palabras', url: 'semanas/semana 11/Juegos/3. Empareja las palabras.html', icono: '🔄', nota: 'Arrastra la palabra griega a su traducción' },
+        { titulo: 'Juego de palabras', url: 'semanas/semana 11/Juegos/4.juego de palabras, solo en la computadora.html', icono: '🔠', nota: 'Selecciona la respuesta correcta' },
+        { titulo: 'Lectura de Juan', url: 'semanas/semana 11/Juegos/lectura de juan.html', icono: '📖', nota: 'Practica lectura del Evangelio de Juan' },
+        { titulo: 'Presente Activo Indicativo', url: 'semanas/semana 11/Juegos/Presente Activo Indicativo.html', icono: '⭐', nota: 'Practica el paradigma del verbo griego' }
+    ]
+},
             12: { 
                 titulo: "Futuro Activo y Medio Pasivo", 
                 tema: "Formación del futuro", 
