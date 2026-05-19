@@ -337,10 +337,10 @@ class SemanaManager {
          
     ],
     juegos: [
-        { titulo: 'Empareja las palabras', url: 'semanas/semana12/html/3. Empareja las palabras.html', icono: '🔄', nota: 'Arrastra la palabra griega a su traducción' },
-        { titulo: 'Juego de palabras', url: 'semanas/semana12/html/4.juego de palabras, solo en la computadora.html', icono: '🔠', nota: 'Selecciona la respuesta correcta' },
-        { titulo: 'Juego 1', url: 'semanas/semana12/html/juego1.html', icono: '🎮', nota: 'Practica el futuro griego' },
-        { titulo: 'Juego 2', url: 'semanas/semana12/html/juego2.html', icono: '🎯', nota: 'Refuerza el futuro medio' }
+        { titulo: 'Empareja las palabras', url: 'semanas/semana12/juegos/3. Empareja las palabras.html', icono: '🔄', nota: 'Arrastra la palabra griega a su traducción' },
+        { titulo: 'Juego de palabras', url: 'semanas/semana12/juegos/4.juego de palabras, solo en la computadora.html', icono: '🔠', nota: 'Selecciona la respuesta correcta' },
+        { titulo: 'Juego 1', url: 'semanas/semana12/juegos/juego1.html', icono: '🎮', nota: 'Practica el futuro griego' },
+        { titulo: 'Juego 2', url: 'semanas/semana12/juegos/juego2.html', icono: '🎯', nota: 'Refuerza el futuro medio' }
     ]
 },
             13: { 
