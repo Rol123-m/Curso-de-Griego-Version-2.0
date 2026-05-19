@@ -320,13 +320,29 @@ class SemanaManager {
         { titulo: 'Presente Activo Indicativo', url: 'semanas/semana 11/Juegos/Presente Activo Indicativo.html', icono: '⭐', nota: 'Practica el paradigma del verbo griego' }
     ]
 },
-            12: { 
-                titulo: "Futuro Activo y Medio Pasivo", 
-                tema: "Formación del futuro", 
-                recursos: [
-                    { tipo: 'html', titulo: 'Contenido semana 12', url: 'recursos_semana12.html', icono: '📚' }
-                ] 
-            },
+         12: {
+    titulo: "El Futuro",
+    tema: "Futuro Activo y Medio Indicativo",
+    recursos: [
+        { tipo: 'html', titulo: 'Introducción al Futuro', url: 'semanas/semana12/html/1. introducción al futuro.html', icono: '1️⃣' },
+        { tipo: 'html', titulo: 'Raíz verbal', url: 'semanas/semana12/html/2. Raíz verbal..html', icono: '2️⃣' },
+        { tipo: 'html', titulo: 'Más sobre futuro', url: 'semanas/semana12/html/3. más sobre futuro. .html', icono: '3️⃣' },
+        { tipo: 'html', titulo: 'Futuro medio indicativo', url: 'semanas/semana12/html/4. futuro medio indicativo.html', icono: '4️⃣' },
+        { tipo: 'html', titulo: 'Futuro de eimi', url: 'semanas/semana12/html/5. Futuro de eimi.html', icono: '5️⃣' },
+        { tipo: 'html', titulo: 'Raíces', url: 'semanas/semana12/html/6. raíces .html', icono: '6️⃣' },
+        { tipo: 'html', titulo: 'Más patrones', url: 'semanas/semana12/html/7. Más patrones.html', icono: '7️⃣' },
+        { tipo: 'html', titulo: 'Futuro líquido', url: 'semanas/semana12/html/8. futuro liquido.html', icono: '8️⃣' },
+        { tipo: 'html', titulo: 'Futuro medio indicativo', url: 'semanas/semana12/html/9. Futuro medio indicativo .html', icono: '9️⃣' },
+        { tipo: 'html', titulo: 'Vocabulario semana 12', url: 'semanas/semana12/html/10. Vocabulario12.html', icono: '📖' }
+         
+    ],
+    juegos: [
+        { titulo: 'Empareja las palabras', url: 'semanas/semana12/html/3. Empareja las palabras.html', icono: '🔄', nota: 'Arrastra la palabra griega a su traducción' },
+        { titulo: 'Juego de palabras', url: 'semanas/semana12/html/4.juego de palabras, solo en la computadora.html', icono: '🔠', nota: 'Selecciona la respuesta correcta' },
+        { titulo: 'Juego 1', url: 'semanas/semana12/html/juego1.html', icono: '🎮', nota: 'Practica el futuro griego' },
+        { titulo: 'Juego 2', url: 'semanas/semana12/html/juego2.html', icono: '🎯', nota: 'Refuerza el futuro medio' }
+    ]
+},
             13: { 
                 titulo: "Imperfecto Indicativo", 
                 tema: "Tiempo pasado continuo", 
