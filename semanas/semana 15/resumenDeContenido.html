@@ -1,0 +1,1755 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consolidación: Griego Koiné</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+            --transition-speed: 0.4s;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 15px;
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0.8rem;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-btn {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        .nav-btn:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .nav-btn.active {
+            background-color: white;
+            color: var(--primary-color);
+        }
+        
+        .content-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity var(--transition-speed) ease, transform var(--transition-speed) ease;
+            display: none;
+        }
+        
+        .content-section.active {
+            opacity: 1;
+            transform: translateY(0);
+            display: block;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+            font-size: 1.5rem;
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+            margin: 1.2rem 0 0.8rem;
+            font-size: 1.2rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            font-size: 0.9rem;
+        }
+        
+        th, td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .quiz-container {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.2rem;
+            margin-top: 1.5rem;
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        .question {
+            margin-bottom: 1.2rem;
+        }
+        
+        .options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        
+        .option {
+            padding: 8px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.9rem;
+        }
+        
+        .option:hover {
+            background-color: #e8f4fc;
+            border-color: var(--secondary-color);
+        }
+        
+        .option.selected {
+            background-color: var(--secondary-color);
+            color: white;
+            border-color: var(--secondary-color);
+        }
+        
+        .option.correct {
+            background-color: #2ecc71;
+            color: white;
+            border-color: #2ecc71;
+        }
+        
+        .option.incorrect {
+            background-color: #e74c3c;
+            color: white;
+            border-color: #e74c3c;
+        }
+        
+        .check-btn, .next-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 8px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+        
+        .check-btn:hover, .next-btn:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+        
+        .result {
+            margin-top: 12px;
+            font-weight: bold;
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+        
+        .result.correct {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        
+        .result.incorrect {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        
+        .vocabulary-section {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 8px;
+            padding: 1.2rem;
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+        
+        .app-link {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 0.8rem;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+        
+        .app-link:hover {
+            background-color: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            color: #7f8c8d;
+            font-size: 0.8rem;
+        }
+        
+        .highlight {
+            background-color: #fff8e1;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        .note {
+            background-color: #e8f4fc;
+            border-left: 4px solid var(--secondary-color);
+            padding: 0.8rem;
+            margin: 0.8rem 0;
+            border-radius: 0 4px 4px 0;
+            font-size: 0.9rem;
+        }
+        
+        /* Media Queries para Responsividad */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .logo {
+                width: 70px;
+                height: 70px;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            nav {
+                flex-direction: column;
+                display: none;
+                gap: 5px;
+                margin-top: 10px;
+            }
+            
+            nav.active {
+                display: flex;
+            }
+            
+            .nav-btn {
+                width: 100%;
+                text-align: center;
+                border-radius: 5px;
+                margin-bottom: 5px;
+            }
+            
+            .content-section {
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+            
+            h3 {
+                font-size: 1.1rem;
+            }
+            
+            table {
+                font-size: 0.8rem;
+                display: block;
+                overflow-x: auto;
+            }
+            
+            th, td {
+                padding: 8px 10px;
+            }
+            
+            .options {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.3rem;
+            }
+            
+            .logo {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .nav-btn {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+            
+            h2 {
+                font-size: 1.2rem;
+            }
+            
+            h3 {
+                font-size: 1rem;
+            }
+            
+            p, .option, .check-btn, .result {
+                font-size: 0.85rem;
+            }
+            
+            .app-link {
+                padding: 8px 16px;
+                font-size: 0.85rem;
+            }
+            
+            th, td {
+                padding: 6px 8px;
+            }
+        }
+        
+        @media (min-width: 769px) and (max-width: 1024px) {
+            /* Estilos específicos para tablets */
+            .container {
+                padding: 15px;
+            }
+            
+            header h1 {
+                font-size: 1.6rem;
+            }
+            
+            .nav-btn {
+                padding: 7px 14px;
+                font-size: 0.85rem;
+            }
+            
+            table {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+          <div class="logo-container">
+    <img src="https://i.postimg.cc/wMJ2bCgV/mas-logos.jpg" alt="Logo Vivos para Servir" class="logo">
+</div>
+<h1>Consolidación: Griego Koiné</h1>
+
+<nav id="mainNav">
+    <button class="nav-btn active" data-target="alfabeto">Alfabeto</button>
+    <button class="nav-btn" data-target="sustantivos">Sustantivos</button>
+    <button class="nav-btn" data-target="adjetivos">Adjetivos</button>
+    <button class="nav-btn" data-target="verbos">Verbos</button>
+    <button class="nav-btn" data-target="pronombres">Pronombres</button>
+    <button class="nav-btn" data-target="preposiciones">Preposiciones</button>
+    <button class="nav-btn" data-target="exegesis">Curiosidad Exegética</button>
+</nav>
+</div>
+</header>
+
+<div class="container">
+    <!-- Sección Curiosidad Exegética -->
+    <section id="exegesis" class="content-section">
+        <h2>Curiosidad Exegética: ¿Qué revela el uso de "τετέλεσται" en Juan 19:30?</h2>
+        
+        <div class="exegesis-content">
+            <p>Cuando Jesús exclama "τετέλεσται" (tetélestai) en la cruz, la mayoría de las traducciones lo vierten como "Consumado es". Pero este verbo, en perfecto pasivo indicativo, encierra una riqueza teológica y lingüística impresionante.</p>
+            
+            <div class="exegesis-point">
+                <h3>🔍 El significado del perfecto griego</h3>
+                <p>El perfecto griego indica una acción completada con efectos duraderos. No es simplemente "se terminó", sino "ha sido completado y permanece completo". Jesús no está diciendo que su sufrimiento terminó, sino que la obra redentora ha sido plenamente realizada y sus efectos continúan.</p>
+            </div>
+            
+            <div class="exegesis-point">
+                <h3>📚 Contexto histórico-cultural</h3>
+                <p>"τετέλεσται" era común en recibos comerciales del siglo I, indicando que una deuda había sido pagada en su totalidad. Esto conecta poderosamente con la teología paulina de la redención como cancelación de deuda (cf. Colosenses 2:14).</p>
+            </div>
+            
+            <div class="exegesis-point">
+                <h3>🔥 Significado completo</h3>
+                <p>En una sola palabra, el griego comunica: misión cumplida, deuda saldada, victoria eterna. ¿Qué traducción moderna logra eso?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Alfabeto -->
+    <section id="alfabeto" class="content-section active">
+        <h2>Alfabeto y Fonética</h2>
+        
+        <div class="note">
+            <p>El alfabeto griego contiene 24 letras. Es necesario aprender su forma (mayúscula/minúscula), nombre y sonido. Énfasis en las letras que suenan diferente al español: <strong>γ (gamma nasal), ρ (rho vibrante), χ, φ, θ (aspiradas), η (e larga), υ (i francesa)</strong>.</p>
+        </div>
+        
+        <h3>Vocales</h3>
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vocal</th>
+                        <th>Sonido</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ε</td>
+                        <td>"e" corta (pez)</td>
+                        <td><span class="highlight">ἐκκλησία</span> (iglesia)</td>
+                    </tr>
+                    <tr>
+                        <td>η</td>
+                        <td>"e" larga (ser)</td>
+                        <td><span class="highlight">ἡσυχία</span> (paz)</td>
+                    </tr>
+                    <tr>
+                        <td>ο</td>
+                        <td>"o" corta (ola)</td>
+                        <td><span class="highlight">ὁράω</span> (ver)</td>
+                    </tr>
+                    <tr>
+                        <td>ω</td>
+                        <td>"o" larga (donde)</td>
+                        <td><span class="highlight">ὤφθη</span> (apareció)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="note">
+            <p>Aquí se puede apreciar las vocales cortas y largas de tipo e y o. Este es un detalle que se olvida fácilmente, sin embargo en el futuro será muy importante.</p>
+        </div>
+        
+        <h3>Diptongos</h3>
+        <p>Combinación de dos vocales que se pronuncian en una sola sílaba:</p>
+        <p>αι (ai), ει (ei), οι (oi), αυ (au), ευ (eu), <span class="highlight">ου (u)</span>. Solo ου se pronuncia diferente.</p>
+        
+        <h3>División de Sílabas y Acento</h3>
+        <p>Toda palabra griega tiene un <span class="highlight">acento</span> (agudo, grave o circunflejo).</p>
+        <p>Reglas básicas de sílaba: toda sílaba debe tener una vocal o diptongo, la división ocurre después de una vocal o entre consonantes. No es necesario memorizar las reglas de división en sílabas. Basta con entenderlas.</p>
+        
+        <div class="quiz-container">
+            <h3>Cuestionario: Alfabeto y Fonética</h3>
+            
+            <div class="question">
+                <p>1. ¿Cuál de estas letras representa una "e" larga?</p>
+                <div class="options">
+                    <div class="option" data-correct="false">ε</div>
+                    <div class="option" data-correct="true">η</div>
+                    <div class="option" data-correct="false">ο</div>
+                    <div class="option" data-correct="false">ω</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <p>2. ¿Cuál de estos diptongos se pronuncia diferente a los demás?</p>
+                <div class="options">
+                    <div class="option" data-correct="false">αι</div>
+                    <div class="option" data-correct="false">ει</div>
+                    <div class="option" data-correct="true">ου</div>
+                    <div class="option" data-correct="false">οι</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <p>3. ¿Cuántas letras tiene el alfabeto griego?</p>
+                <div class="options">
+                    <div class="option" data-correct="false">22</div>
+                    <div class="option" data-correct="true">24</div>
+                    <div class="option" data-correct="false">26</div>
+                    <div class="option" data-correct="false">28</div>
+                </div>
+            </div>
+            
+            <button class="check-btn">Verificar Respuestas</button>
+            <div class="result"></div>
+        </div>
+        
+        <div class="vocabulary-section">
+            <h3>Recurso de Vocabulario</h3>
+            <p>Amplía tu vocabulario con la app de nuestro ministerio:</p>
+            <a href="https://rol123-m.github.io/Aplicacion-de-vocabulario-de-Griego-Koin-/" class="app-link">Vivos para Servir - App de Vocabulario</a>
+        </div>
+    </section>
+
+    <!-- Sección Sustantivos -->
+    <section id="sustantivos" class="content-section">
+        <h2>Sustantivos, Artículos y Casos</h2>
+        
+        <p>Estos son los componentes básicos de un sustantivo. Por un lado, todo sustantivo tiene un lexema, que encierra su significado básico, y su desinencia, es decir, las terminaciones. Estas terminaciones nos brindan la información gramatical del sustantivo, esto es: Género (masculino, femenino y neutro), número (singular y plural) y caso (nominativo, genitivo, dativo y acusativo).</p>
+        
+        <h3>Sistema de Casos</h3>
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Caso</th>
+                        <th>Función Básica</th>
+                        <th>Ejemplo</th>
+                        <th>Traducción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nominativo</td>
+                        <td>Sujeto (¿quién?)</td>
+                        <td><span class="highlight">λόγος</span></td>
+                        <td>Palabra</td>
+                    </tr>
+                    <tr>
+                        <td>Genitivo</td>
+                        <td>Posesión, descripción ("de")</td>
+                        <td><span class="highlight">λόγου</span></td>
+                        <td>De palabra</td>
+                    </tr>
+                    <tr>
+                        <td>Dativo</td>
+                        <td>Complemento Indirecto ("a", "para")</td>
+                        <td><span class="highlight">λόγῳ</span></td>
+                        <td>A, para, por, con palabra</td>
+                    </tr>
+                    <tr>
+                        <td>Acusativo</td>
+                        <td>Complemento Directo ("a", "hacia")</td>
+                        <td><span class="highlight">λόγον</span></td>
+                        <td>Palabra</td>
+                    </tr>
+                    <tr>
+                        <td>Vocativo</td>
+                        <td>Llamada o dirección directa</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <h3>Declinaciones</h3>
+        <div class="note">
+            <p><strong>Regla No 1:</strong> "Los sustantivos cuyo lexema termina en <strong>alfa o eta</strong>, están en la <strong>primera declinación</strong> y son mayormente <strong>femeninos</strong>, aquellos cuyo lexema termina en <strong>omicron</strong> están en la <strong>segunda declinación</strong> y son mayormente <strong>masculinos y neutros</strong>. Por último, aquellos cuyo lexema termina <strong>en consonante</strong> están en la <strong>tercera declinación</strong>."</p>
+        </div>
+        
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Declinación</th>
+                        <th>Terminación del lexema</th>
+                        <th>Género</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Primera</td>
+                        <td>Alfa o Eta</td>
+                        <td>Femenino</td>
+                        <td><span class="highlight">ἀγάπη</span></td>
+                    </tr>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>Omicrón</td>
+                        <td>Masculino o neutro</td>
+                        <td><span class="highlight">Λόγος, ἔργον</span></td>
+                    </tr>
+                    <tr>
+                        <td>Tercera</td>
+                        <td>Consonante</td>
+                        <td>Cualquiera</td>
+                        <td><span class="highlight">σάρξ</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <h3>Terminaciones de los Sustantivos Griegos Paradigmas</h3>
+        <div class="note">
+            <p><strong>Nota:</strong> Esta es la tabla más importante para la primera y segunda declinación. De aquí depende todo.</p>
+        </div>
+        
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Caso</th>
+                        <th>Masculino 2ª</th>
+                        <th>Femenino 1ª</th>
+                        <th>Neutro 2ª</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Nom. sg</strong></td>
+                        <td>ς</td>
+                        <td>---------</td>
+                        <td>ν</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gen. sg</strong></td>
+                        <td>υ</td>
+                        <td>ς</td>
+                        <td>υ</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dat. sg</strong></td>
+                        <td>ι</td>
+                        <td>ι</td>
+                        <td>ι</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Acc. sg</strong></td>
+                        <td>ν</td>
+                        <td>ν</td>
+                        <td>ν</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nom. pl</strong></td>
+                        <td>ι</td>
+                        <td>ι</td>
+                        <td>α</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gen. pl</strong></td>
+                        <td>-ων</td>
+                        <td>-ων</td>
+                        <td>-ων</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dat. pl</strong></td>
+                        <td>-ις</td>
+                        <td>-ις</td>
+                        <td>-ις</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Acc. pl</strong></td>
+                        <td>-υς</td>
+                        <td>-ς</td>
+                        <td>-α</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="note">
+            <p>Este es el paradigma que deben memorizar, todo lo demás depende de esto en la tercera declinación.</p>
+        </div>
+        
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Caso</th>
+                        <th>1ª/2ª Decl.</th>
+                        <th>3ª Decl. (masc/fem)</th>
+                        <th>3ª Decl. (neutro)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Nom. sg.</strong></td>
+                        <td>ς</td>
+                        <td>ς</td>
+                        <td>-- (sin terminación)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gen. sg.</strong></td>
+                        <td>ου/ς</td>
+                        <td>ος</td>
+                        <td>ος</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dat. sg.</strong></td>
+                        <td>ι</td>
+                        <td>ι</td>
+                        <td>ι</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ac. sg.</strong></td>
+                        <td>ν</td>
+                        <td>α/v</td>
+                        <td>_ (sin terminación)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nom. pl.</strong></td>
+                        <td>ι/α</td>
+                        <td>ες</td>
+                        <td>α</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gen. pl.</strong></td>
+                        <td>ων</td>
+                        <td>ων</td>
+                        <td>ων</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dat. pl.</strong></td>
+                        <td>ις</td>
+                        <td>σι(ν)</td>
+                        <td>σι(ν)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ac. pl.</strong></td>
+                        <td>υς/α</td>
+                        <td>ας</td>
+                        <td>α</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <h3>Ejemplo de las tres declinaciones</h3>
+        <div class="note">
+            <p><strong>Nota:</strong> No debes memorizar esto, solo analizar las terminaciones.</p>
+        </div>
+        
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Caso</th>
+                        <th>3ª Decl. (σάρξ)</th>
+                        <th>2ª Decl. (λόγος)</th>
+                        <th>1ª Decl. (γραφή)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Nom. sg.</strong></td>
+                        <td>*σαρκ + ς → <strong>σάρξ</strong></td>
+                        <td>λόγος</td>
+                        <td>γραφή</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gen. sg.</strong></td>
+                        <td>*σαρκ + ος → <strong>σαρκός</strong></td>
+                        <td>λόγου</td>
+                        <td>γραφῆς</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dat. sg.</strong></td>
+                        <td>*σαρκ + ι → <strong>σαρκί</strong></td>
+                        <td>λόγῳ</td>
+                        <td>γραφῇ</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ac. sg.</strong></td>
+                        <td>*σαρκ + α → <strong>σάρκα</strong></td>
+                        <td>λόγον</td>
+                        <td>γραφήν</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nom. pl.</strong></td>
+                        <td>*σαρκ + ες → <strong>σάρκες</strong></td>
+                        <td>λόγοι</td>
+                        <td>γραφαί</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gen. pl.</strong></td>
+                        <td>*σαρκ + ων → <strong>σαρκῶν</strong></td>
+                        <td>λόγων</td>
+                        <td>γραφῶν</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dat. pl.</strong></td>
+                        <td>*σαρκ + σι(ν) → <strong>σαρξί(ν)</strong></td>
+                        <td>λόγοις</td>
+                        <td>γραφαῖς</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ac. pl.</strong></td>
+                        <td>*σαρκ + ας → <strong>σάρκας</strong></td>
+                        <td>λόγους</td>
+                        <td>γραφάς</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <h3>Cuadro de Oclusivas</h3>
+        <p>Memoriza este cuadro para predecir cambios:</p>
+        <ul>
+            <li><strong>Labial (π, β, φ) + σ → ψ</strong> (ej. <em>σκολοπ + σ → σκόλοψ</em>)</li>
+            <li><strong>Velar (κ, γ, χ) + σ → ξ</strong> (ej. <em>σαρκ + σ → σάρξ</em>)</li>
+            <li><strong>Dental (τ, δ, θ) + σ → σ</strong> (ej. <em>ονοματ + σι → ὀνόμασι</em>)</li>
+        </ul>
+        
+        <h3>El Artículo Definido ("el, la, los, las")</h3>
+        <p><strong>Clave:</strong> Concuerda con el sustantivo en <strong>género, número y caso</strong>. Es nuestro "mejor amigo" para identificar el género, número y caso de cualquier sustantivo, especialmente en la 3ª declinación.</p>
+        
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Caso</th>
+                        <th>Masculino</th>
+                        <th>Femenino</th>
+                        <th>Neutro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Nominativo</strong></td>
+                        <td>ὁ</td>
+                        <td>ἡ</td>
+                        <td>τό</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Genitivo</strong></td>
+                        <td>τοῦ</td>
+                        <td>τῆς</td>
+                        <td>τοῦ</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dativo</strong></td>
+                        <td>τῷ</td>
+                        <td>τῇ</td>
+                        <td>τῷ</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Acusativo</strong></td>
+                        <td>τόν</td>
+                        <td>τήν</td>
+                        <td>τό</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nominativo pl.</strong></td>
+                        <td>οἱ</td>
+                        <td>αἱ</td>
+                        <td>τά</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Genitivo pl.</strong></td>
+                        <td>τῶν</td>
+                        <td>τῶν</td>
+                        <td>τῶν</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dativo pl.</strong></td>
+                        <td>τοῖς</td>
+                        <td>ταῖς</td>
+                        <td>τοῖς</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Acusativo pl.</strong></td>
+                        <td>τούς</td>
+                        <td>τάς</td>
+                        <td>τά</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <h3>Forma léxica</h3>
+        <p>Los léxicos son diccionarios especializados para el griego. La forma léxica de un sustantivo es su forma en <strong>nominativo singular</strong>. Por ejemplo, la forma léxica de <strong>κόσμον</strong> (acusativo singular) es <strong>κόσμος</strong>.</p>
+        
+        <div class="quiz-container">
+            <h3>Cuestionario: Sustantivos y Casos</h3>
+            
+            <div class="question">
+                <p>1. ¿Qué caso se utiliza para el sujeto de una oración?</p>
+                <div class="options">
+                    <div class="option" data-correct="true">Nominativo</div>
+                    <div class="option" data-correct="false">Genitivo</div>
+                    <div class="option" data-correct="false">Dativo</div>
+                    <div class="option" data-correct="false">Acusativo</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <p>2. ¿Qué declinación tienen los sustantivos cuyo lexema termina en omicrón?</p>
+                <div class="options">
+                    <div class="option" data-correct="false">Primera</div>
+                    <div class="option" data-correct="true">Segunda</div>
+                    <div class="option" data-correct="false">Tercera</div>
+                    <div class="option" data-correct="false">Cuarta</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <p>3. ¿Qué caso indica posesión?</p>
+                <div class="options">
+                    <div class="option" data-correct="false">Nominativo</div>
+                    <div class="option" data-correct="true">Genitivo</div>
+                    <div class="option" data-correct="false">Dativo</div>
+                    <div class="option" data-correct="false">Acusativo</div>
+                </div>
+            </div>
+            
+            <button class="check-btn">Verificar Respuestas</button>
+            <div class="result"></div>
+        </div>
+        
+        <div class="vocabulary-section">
+            <h3>Recurso de Vocabulario</h3>
+            <p>Amplía tu vocabulario con la app de nuestro ministerio:</p>
+            <a href="https://rol123-m.github.io/Aplicacion-de-vocabulario-de-Griego-Koin-/" class="app-link">Vivos para Servir - App de Vocabulario</a>
+        </div>
+    </section>
+
+    <!-- Sección Adjetivos -->
+    <section id="adjetivos" class="content-section">
+        <h2>Adjetivos</h2>
+        <p>Los adjetivos en griego describen o modifican a un sustantivo y deben concordar con él en género, número y caso.</p>
+        
+        <h3>Concordancia Adjetival</h3>
+        <p><strong>Regla de oro:</strong> Deben concordar con el sustantivo en <strong>género, número y caso</strong>.</p>
+        <p>Pueden seguir patrones de la <strong>1ª y 2ª declinación</strong> (e.g., ἀγαθός, -ή, -όν) o de la <strong>3ª declinación</strong> (e.g., πᾶς, πᾶσα, πᾶν).</p>
+        
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Caso</th>
+                        <th>Masculino sg.</th>
+                        <th>Femenino sg.</th>
+                        <th>Neutro sg.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nom.</td>
+                        <td>ἀγαθός</td>
+                        <td>ἀγαθή</td>
+                        <td>ἀγαθόν</td>
+                    </tr>
+                    <tr>
+                        <td>Gen.</td>
+                        <td>ἀγαθοῦ</td>
+                        <td>ἀγαθῆς</td>
+                        <td>ἀγαθοῦ</td>
+                    </tr>
+                    <tr>
+                        <td>Dat.</td>
+                        <td>ἀγαθῷ</td>
+                        <td>ἀγαθῇ</td>
+                        <td>ἀγαθῷ</td>
+                    </tr>
+                    <tr>
+                        <td>Ac.</td>
+                        <td>ἀγαθόν</td>
+                        <td>ἀγαθήν</td>
+                        <td>ἀγαθόν</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Caso</th>
+                        <th>Masculino pl.</th>
+                        <th>Femenino pl.</th>
+                        <th>Neutro pl.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nom.</td>
+                        <td>ἀγαθοί</td>
+                        <td>ἀγαθαί</td>
+                        <td>ἀγαθά</td>
+                    </tr>
+                    <tr>
+                        <td>Gen.</td>
+                        <td>ἀγαθῶν</td>
+                        <td>ἀγαθῶν</td>
+                        <td>ἀγαθῶν</td>
+                    </tr>
+                    <tr>
+                        <td>Dat.</td>
+                        <td>ἀγαθοῖς</td>
+                        <td>ἀγαθαῖς</td>
+                        <td>ἀγαθοῖς</td>
+                    </tr>
+                    <tr>
+                        <td>Ac.</td>
+                        <td>ἀγαθούς</td>
+                        <td>ἀγαθάς</td>
+                        <td>ἀγαθά</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="note">
+            <p>En realidad las desinencias de los adjetivos son muy fáciles. No hay nada nuevo que aprender aquí.</p>
+        </div>
+        
+        <h3>Forma léxica de los adjetivos</h3>
+        <p>La forma léxica de cualquier palabra que puede aparecer en más de un género es el <strong>nominativo singular masculino</strong> (como ya se ha visto con el artículo).</p>
+        
+        <h3>Funciones del adjetivo</h3>
+        <ul>
+            <li><strong>Atributivo:</strong> Da una cualidad a un sustantivo (concuerda en caso, número y género).</li>
+            <li><strong>Sustantivado:</strong> Funciona como sustantivo (su género y número dependen de lo que representa).</li>
+            <li><strong>Predicativo:</strong> Afirma algo sobre el sujeto (usando implícita o explícitamente el verbo "ser").</li>
+        </ul>
+        
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categoría</th>
+                        <th>Estructura gramatical</th>
+                        <th>Ejemplo griego</th>
+                        <th>Traducción al español</th>
+                        <th>Función gramatical</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>4.1. Presencia del artículo</td>
+                        <td>Sin artículo (anartro)</td>
+                        <td>ἀγαθὸς ἄνθρωπος</td>
+                        <td>Un hombre bueno / es bueno</td>
+                        <td>Generalmente predicativo</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Con artículo (articular)</td>
+                        <td>ὁ ἀγαθὸς ἄνθρωπος</td>
+                        <td>El hombre bueno</td>
+                        <td>Atributivo o sustantivado</td>
+                    </tr>
+                    <tr>
+                        <td>4.2. 1ª posición atributiva</td>
+                        <td>Artículo + Adjetivo + Sustantivo</td>
+                        <td>ὁ ἀγαθὸς ἄνθρωπος</td>
+                        <td>El hombre bueno</td>
+                        <td>Atributivo</td>
+                    </tr>
+                    <tr>
+                        <td>4.2. 2ª posición atributiva</td>
+                        <td>Artículo + Sustantivo + Artículo + Adjetivo</td>
+                        <td>ὁ ἄνθρωπος ὁ ἀγαθός</td>
+                        <td>El hombre bueno</td>
+                        <td>Atributivo</td>
+                    </tr>
+                    <tr>
+                        <td>4.2. Posición incorrecta</td>
+                        <td>Artículo + Adjetivo + Artículo + Sustantivo</td>
+                        <td>ὁ ἀγαθὸς ὁ ἄνθρωπος</td>
+                        <td>---</td>
+                        <td>❌ Incorrecta</td>
+                    </tr>
+                    <tr>
+                        <td>4.3. Predicativo con artículo</td>
+                        <td>Artículo + Sustantivo + Adjetivo sin artículo</td>
+                        <td>ὁ ἄνθρωπος ἀγαθός</td>
+                        <td>El hombre es bueno</td>
+                        <td>Predicativo</td>
+                    </tr>
+                    <tr>
+                        <td>4.4. Ausencia total de artículo</td>
+                        <td>Sin artículo en ambos elementos</td>
+                        <td>ἀγαθὸς ἄνθρωπος / ἄνθρωπος ἀγαθὸς</td>
+                        <td>Es bueno / Un hombre bueno</td>
+                        <td>Contextual (atributivo o predicativo)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="quiz-container">
+            <h3>Cuestionario: Adjetivos</h3>
+            
+            <div class="question">
+                <p>1. ¿Con qué deben concordar los adjetivos en griego?</p>
+                <div class="options">
+                    <div class="option" data-correct="false">Solo con el género</div>
+                    <div class="option" data-correct="false">Solo con el número</div>
+                    <div class="option" data-correct="true">Género, número y caso</div>
+                    <div class="option" data-correct="false">Solo con el caso</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <p>2. ¿Qué forma de adjetivo modifica directamente a un sustantivo?</p>
+                <div class="options">
+                    <div class="option" data-correct="true">Atributivo</div>
+                    <div class="option" data-correct="false">Predicativo</div>
+                    <div class="option" data-correct="false">Sustantivado</div>
+                    <div class="option" data-correct="false">Relativo</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <p>3. ¿Cuál es la forma léxica de un adjetivo?</p>
+                <div class="options">
+                    <div class="option" data-correct="false">Genitivo singular</div>
+                    <div class="option" data-correct="true">Nominativo singular masculino</div>
+                    <div class="option" data-correct="false">Acusativo plural</div>
+                    <div class="option" data-correct="false">Dativo singular</div>
+                </div>
+            </div>
+            
+            <button class="check-btn">Verificar Respuestas</button>
+            <div class="result"></div>
+        </div>
+        
+        <div class="vocabulary-section">
+            <h3>Recurso de Vocabulario</h3>
+            <p>Amplía tu vocabulario con la app de nuestro ministerio:</p>
+            <a href="https://rol123-m.github.io/Aplicacion-de-vocabulario-de-Griego-Koin-/" class="app-link">Vivos para Servir - App de Vocabulario</a>
+        </div>
+    </section>
+
+    <!-- Sección Verbos -->
+    <section id="verbos" class="content-section">
+        <h2>Verbos</h2>
+        <p>Los verbos son el corazón de la oración en griego y expresan acción, estado o existencia.</p>
+        
+        <h3>Tiempos Verbales</h3>
+        <p>El griego tiene varios tiempos verbales que expresan diferentes aspectos de la acción:</p>
+        
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tiempo</th>
+                        <th>Función</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Presente</td>
+                        <td>Acción continua o repetitiva</td>
+                        <td>λύω (libero/estoy liberando)</td>
+                    </tr>
+                    <tr>
+                        <td>Futuro</td>
+                        <td>Acción que ocurrirá</td>
+                        <td>λύσω (liberaré)</td>
+                    </tr>
+                    <tr>
+                        <td>Imperfecto</td>
+                        <td>Acción continua en el pasado</td>
+                        <td>ἔλυον (liberaba/estaba liberando)</td>
+                    </tr>
+                    <tr>
+                        <td>Aoristo</td>
+                        <td>Acción puntual o completada</td>
+                        <td>ἔλυσα (liberé)</td>
+                    </tr>
+                    <tr>
+                        <td>Perfecto</td>
+                        <td>Acción completada con efectos presentes</td>
+                        <td>λέλυκα (he liberado)</td>
+                    </tr>
+                    <tr>
+                        <td>Pluscuamperfecto</td>
+                        <td>Acción completada con efectos en el pasado</td>
+                        <td>ἐλελύκειν (había liberado)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <h3>Voces Verbales</h3>
+        <ul>
+            <li><strong>Activa:</strong> El sujeto realiza la acción (yo amo)</li>
+            <li><strong>Media:</strong> El sujeto realiza la acción para sí mismo (me amo)</li>
+            <li><strong>Pasiva:</strong> El sujeto recibe la acción (soy amado)</li>
+        </ul>
+        
+        <h3>Modos Verbales</h3>
+        <ul>
+            <li><strong>Indicativo:</strong> Hechos reales o percibidos como reales</li>
+            <li><strong>Subjuntivo:</strong> Posibilidad, incertidumbre, exhortación</li>
+            <li><strong>Imperativo:</strong> Mandatos u órdenes</li>
+            <li><strong>Optativo:</strong> Deseos o posibilidades remotas</li>
+            <li><strong>Infinitivo:</strong> Acción verbal sin especificar persona</li>
+            <li><strong>Participio:</strong> Forma verbal que funciona como adjetivo</li>
+        </ul>
+        
+        <h3>Conjugación Verbal</h3>
+        <p>Los verbos griegos se componen de:</p>
+        <ul>
+            <li><strong>Raíz:</strong> Parte invariable que contiene el significado básico</li>
+            <li><strong>Aumento:</strong> Prefijo que indica tiempo pasado (solo en indicativo)</li>
+            <li><strong>Tema:</strong> Raíz + vocal temática que determina la conjugación</li>
+            <li><strong>Desinencia:</strong> Terminación que indica persona, número, voz y modo</li>
+        </ul>
+        
+        <h3>Ejemplo de conjugación: λύω (liberar)</h3>
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Persona</th>
+                        <th>Presente Activo</th>
+                        <th>Futuro Activo</th>
+                        <th>Aoristo Activo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1ª sg.</td>
+                        <td>λύω</td>
+                        <td>λύσω</td>
+                        <td>ἔλυσα</td>
+                    </tr>
+                    <tr>
+                        <td>2ª sg.</td>
+                        <td>λύεις</td>
+                        <td>λύσεις</td>
+                        <td>ἔλυσας</td>
+                    </tr>
+                    <tr>
+                        <td>3ª sg.</td>
+                        <td>λύει</td>
+                        <td>λύσει</td>
+                        <td>ἔλυσε(ν)</td>
+                    </tr>
+                    <tr>
+                        <td>1ª pl.</td>
+                        <td>λύομεν</td>
+                        <td>λύσομεν</td>
+                        <td>ἐλύσαμεν</td>
+                    </tr>
+                    <tr>
+                        <td>2ª pl.</td>
+                        <td>λύετε</td>
+                        <td>λύσετε</td>
+                        <td>ἐλύσατε</td>
+                    </tr>
+                    <tr>
+                        <td>3ª pl.</td>
+                        <td>λύουσι(ν)</td>
+                        <td>λύσουσι(ν)</td>
+                        <td>ἔλυσαν</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="quiz-container">
+            <h3>Cuestionario: Verbos</h3>
+            
+            <div class="question">
+                <p>1. ¿Qué tiempo verbal expresa acción continua o repetitiva?</p>
+                <div class="options">
+                    <div class="option" data-correct="true">Presente</div>
+                    <div class="option" data-correct="false">Futuro</div>
+                    <div class="option" data-correct="false">Aoristo</div>
+                    <div class="option" data-correct="false">Perfecto</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <p>2. ¿Qué tiempo verbal se usa para acciones puntuales o completadas en el pasado?</p>
+                <div class="options">
+                    <div class="option" data-correct="false">Presente</div>
+                    <div class="option" data-correct="false">Imperfecto</div>
+                    <div class="option" data-correct="true">Aoristo</div>
+                    <div class="option" data-correct="false">Futuro</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <p>3. ¿Cuál de estos es un ejemplo de futuro?</p>
+                <div class="options">
+                    <div class="option" data-correct="false">λύω</div>
+                    <div class="option" data-correct="true">λύσω</div>
+                    <div class="option" data-correct="false">ἔλυον</div>
+                    <div class="option" data-correct="false">ἔλυσα</div>
+                </div>
+            </div>
+            
+            <button class="check-btn">Verificar Respuestas</button>
+            <div class="result"></div>
+        </div>
+        
+        <div class="vocabulary-section">
+            <h3>Recurso de Vocabulario</h3>
+            <p>Amplía tu vocabulario con la app de nuestro ministerio:</p>
+            <a href="https://rol123-m.github.io/Aplicacion-de-vocabulario-de-Griego-Koin-/" class="app-link">Vivos para Servir - App de Vocabulario</a>
+        </div>
+    </section>
+
+    <!-- Sección Pronombres -->
+    <section id="pronombres" class="content-section">
+        <h2>Pronombres</h2>
+        <p>Los pronombres sustituyen a los sustantivos y concuerdan con ellos en género y número.</p>
+        
+        <h3>Pronombres Personales</h3>
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Persona</th>
+                        <th>Nominativo</th>
+                        <th>Genitivo</th>
+                        <th>Acusativo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1ª sg. (yo)</td>
+                        <td>ἐγώ</td>
+                        <td>μου</td>
+                        <td>με</td>
+                    </tr>
+                    <tr>
+                        <td>2ª sg. (tú)</td>
+                        <td>σύ</td>
+                        <td>σου</td>
+                        <td>σε</td>
+                    </tr>
+                    <tr>
+                        <td>3ª sg. (él/ella)</td>
+                        <td>αὐτός/αὐτή</td>
+                        <td>αὐτοῦ/αὐτῆς</td>
+                        <td>αὐτόν/αὐτήν</td>
+                    </tr>
+                    <tr>
+                        <td>1ª pl. (nosotros)</td>
+                        <td>ἡμεῖς</td>
+                        <td>ἡμῶν</td>
+                        <td>ἡμᾶς</td>
+                    </tr>
+                    <tr>
+                        <td>2ª pl. (vosotros)</td>
+                        <td>ὑμεῖς</td>
+                        <td>ὑμῶν</td>
+                        <td>ὑμᾶς</td>
+                    </tr>
+                    <tr>
+                        <td>3ª pl. (ellos/ellas)</td>
+                        <td>αὐτοί/αὐταί</td>
+                        <td>αὐτῶν</td>
+                        <td>αὐτούς/αὐτάς</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <h3>Pronombres Demostrativos</h3>
+        <p>Indican proximidad o lejanía:</p>
+        <ul>
+            <li><strong>οὗτος, αὕτη, τοῦτο</strong> (este, esta, esto)</li>
+            <li><strong>ἐκεῖνος, ἐκείνη, ἐκεῖνο</strong> (aquel, aquella, aquello)</li>
+        </ul>
+        
+        <h3>Pronombres Relativos</h3>
+        <p>Introducen oraciones subordinadas:</p>
+        <p><strong>ὅς, ἥ, ὅ</strong> (que, el cual, la cual)</p>
+        
+        <h3>Pronombres Interrogativos</h3>
+        <p>Formulan preguntas:</p>
+        <p><strong>τίς, τί</strong> (¿quién?, ¿qué?)</p>
+        
+        <div class="quiz-container">
+            <h3>Cuestionario: Pronombres</h3>
+            
+            <div class="question">
+                <p>1. ¿Cómo se dice "yo" en nominativo?</p>
+                <div class="options">
+                    <div class="option" data-correct="true">ἐγώ</div>
+                    <div class="option" data-correct="false">σύ</div>
+                    <div class="option" data-correct="false">αὐτός</div>
+                    <div class="option" data-correct="false">με</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <p>2. ¿Qué pronombre significa "tú" en griego?</p>
+                <div class="options">
+                    <div class="option" data-correct="false">ἐγώ</div>
+                    <div class="option" data-correct="true">σύ</div>
+                    <div class="option" data-correct="false">αὐτός</div>
+                    <div class="option" data-correct="false">ἡμεῖς</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <p>3. ¿Cuál es la forma de genitivo de "yo"?</p>
+                <div class="options">
+                    <div class="option" data-correct="false">ἐγώ</div>
+                    <div class="option" data-correct="false">με</div>
+                    <div class="option" data-correct="true">μου</div>
+                    <div class="option" data-correct="false">σου</div>
+                </div>
+            </div>
+            
+            <button class="check-btn">Verificar Respuestas</button>
+            <div class="result"></div>
+        </div>
+        
+        <div class="vocabulary-section">
+            <h3>Recurso de Vocabulario</h3>
+            <p>Amplía tu vocabulario con la app de nuestro ministerio:</p>
+            <a href="https://rol123-m.github.io/Aplicacion-de-vocabulario-de-Griego-Koin-/" class="app-link">Vivos para Servir - App de Vocabulario</a>
+        </div>
+    </section>
+
+    <!-- Sección Preposiciones -->
+    <section id="preposiciones" class="content-section">
+        <h2>Preposiciones</h2>
+        <p>Las preposiciones son palabras cortas que precisan el significado y gobiernan un caso específico.</p>
+        
+        <h3>Preposiciones Comunes</h3>
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Preposición</th>
+                        <th>Caso</th>
+                        <th>Significado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>διά</td>
+                        <td>Genitivo</td>
+                        <td>a través de</td>
+                    </tr>
+                    <tr>
+                        <td>διά</td>
+                        <td>Acusativo</td>
+                        <td>a causa de</td>
+                    </tr>
+                    <tr>
+                        <td>εἰς</td>
+                        <td>Acusativo</td>
+                        <td>hacia, para</td>
+                    </tr>
+                    <tr>
+                        <td>ἐκ</td>
+                        <td>Genitivo</td>
+                        <td>desde, fuera de</td>
+                    </tr>
+                    <tr>
+                        <td>ἐν</td>
+                        <td>Dativo</td>
+                        <td>en</td>
+                    </tr>
+                    <tr>
+                        <td>πρός</td>
+                        <td>Acusativo</td>
+                        <td>hacia, con</td>
+                    </tr>
+                    <tr>
+                        <td>ὑπό</td>
+                        <td>Genitivo</td>
+                        <td>por (agente)</td>
+                    </tr>
+                    <tr>
+                        <td>ὑπό</td>
+                        <td>Acusativo</td>
+                        <td>debajo de</td>
+                    </tr>
+                    <tr>
+                        <td>μετά</td>
+                        <td>Genitivo</td>
+                        <td>con (compañía)</td>
+                    </tr>
+                    <tr>
+                        <td>μετά</td>
+                        <td>Acusativo</td>
+                        <td>después de</td>
+                    </tr>
+                    <tr>
+                        <td>παρά</td>
+                        <td>Genitivo</td>
+                        <td>de parte de</td>
+                    </tr>
+                    <tr>
+                        <td>παρά</td>
+                        <td>Dativo</td>
+                        <td>junto a</td>
+                    </tr>
+                    <tr>
+                        <td>παρά</td>
+                        <td>Acusativo</td>
+                        <td>junto a, a lo largo de</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="note">
+            <p>Nota: Muchas preposiciones griegas pueden gobernar diferentes casos con significados distintos, como se muestra en la tabla.</p>
+        </div>
+        
+        <h3>Preposiciones Compuestas</h3>
+        <p>Las preposiciones pueden combinarse con verbos para modificar su significado:</p>
+        <ul>
+            <li><strong>προσ-</strong> (hacia): προσ-έρχομαι (acercarse)</li>
+            <li><strong>ἀπο-</strong> (desde): ἀπο-στέλλω (enviar desde)</li>
+            <li><strong>συν-</strong> (con): συν-άγω (reunir con)</li>
+        </ul>
+        
+        <div class="quiz-container">
+            <h3>Cuestionario: Preposiciones</h3>
+            
+            <div class="question">
+                <p>1. ¿Qué caso gobierna la preposición "ἐν"?</p>
+                <div class="options">
+                    <div class="option" data-correct="false">Nominativo</div>
+                    <div class="option" data-correct="false">Genitivo</div>
+                    <div class="option" data-correct="true">Dativo</div>
+                    <div class="option" data-correct="false">Acusativo</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <p>2. ¿Qué preposición significa "a través de" con genitivo?</p>
+                <div class="options">
+                    <div class="option" data-correct="true">διά</div>
+                    <div class="option" data-correct="false">εἰς</div>
+                    <div class="option" data-correct="false">ἐκ</div>
+                    <div class="option" data-correct="false">πρός</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <p>3. ¿Qué preposición puede significar "por" (agente) con genitivo?</p>
+                <div class="options">
+                    <div class="option" data-correct="false">διά</div>
+                    <div class="option" data-correct="false">εἰς</div>
+                    <div class="option" data-correct="true">ὑπό</div>
+                    <div class="option" data-correct="false">ἐν</div>
+                </div>
+            </div>
+            
+            <button class="check-btn">Verificar Respuestas</button>
+            <div class="result"></div>
+        </div>
+        
+        <div class="vocabulary-section">
+            <h3>Recurso de Vocabulario</h3>
+            <p>Amplía tu vocabulario con la app de nuestro ministerio:</p>
+            <a href="https://rol123-m.github.io/Aplicacion-de-vocabulario-de-Griego-Koin-/" target="blank" class="app-link">Vivos para Servir - App de Vocabulario</a>
+        </div>
+    </section>
+</div>
+
+    <footer>
+        <p>&copy; 2025 Ministerio Vivos para Servir - Curso de Griego Koiné</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Navegación entre secciones
+            const navButtons = document.querySelectorAll('.nav-btn');
+            const contentSections = document.querySelectorAll('.content-section');
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mainNav = document.getElementById('mainNav');
+            
+            // Función para cambiar de sección
+            function changeSection(targetId) {
+                // Desactivar todos los botones y secciones
+                navButtons.forEach(btn => btn.classList.remove('active'));
+                contentSections.forEach(section => section.classList.remove('active'));
+                
+                // Activar el botón y sección seleccionados
+                document.querySelector(`.nav-btn[data-target="${targetId}"]`).classList.add('active');
+                document.getElementById(targetId).classList.add('active');
+                
+                // Cerrar menú móvil si está abierto
+                if (window.innerWidth <= 768) {
+                    mainNav.classList.remove('active');
+                }
+            }
+            
+            // Event listeners para botones de navegación
+            navButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-target');
+                    changeSection(targetId);
+                });
+            });
+            
+            // Menú móvil
+            mobileMenuBtn.addEventListener('click', function() {
+                mainNav.classList.toggle('active');
+            });
+            
+            // Funcionalidad de los cuestionarios
+            const checkButtons = document.querySelectorAll('.check-btn');
+            
+            checkButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const quizContainer = this.parentElement;
+                    const options = quizContainer.querySelectorAll('.option');
+                    const result = quizContainer.querySelector('.result');
+                    
+                    let correctAnswers = 0;
+                    let totalQuestions = 0;
+                    
+                    // Verificar cada pregunta
+                    quizContainer.querySelectorAll('.question').forEach(question => {
+                        totalQuestions++;
+                        const selectedOption = question.querySelector('.option.selected');
+                        
+                        if (selectedOption && selectedOption.getAttribute('data-correct') === 'true') {
+                            correctAnswers++;
+                        }
+                    });
+                    
+                    // Mostrar resultado
+                    if (correctAnswers === totalQuestions) {
+                        result.textContent = `¡Perfecto! ${correctAnswers}/${totalQuestions} respuestas correctas.`;
+                        result.className = 'result correct';
+                    } else {
+                        result.textContent = `${correctAnswers}/${totalQuestions} respuestas correctas. Sigue practicando.`;
+                        result.className = 'result incorrect';
+                    }
+                    
+                    // Mostrar respuestas correctas e incorrectas
+                    options.forEach(option => {
+                        if (option.getAttribute('data-correct') === 'true') {
+                            option.classList.add('correct');
+                        } else if (option.classList.contains('selected')) {
+                            option.classList.add('incorrect');
+                        }
+                    });
+                });
+            });
+            
+            // Selección de opciones en los cuestionarios
+            document.querySelectorAll('.option').forEach(option => {
+                option.addEventListener('click', function() {
+                    // Limpiar selecciones previas en esta pregunta
+                    const question = this.closest('.question');
+                    question.querySelectorAll('.option').forEach(opt => {
+                        opt.classList.remove('selected');
+                    });
+                    
+                    // Seleccionar la opción clickeada
+                    this.classList.add('selected');
+                });
+            });
+            
+            // Cerrar menú móvil al hacer clic fuera de él
+            document.addEventListener('click', function(event) {
+                if (window.innerWidth <= 768 && 
+                    !mainNav.contains(event.target) && 
+                    !mobileMenuBtn.contains(event.target) &&
+                    mainNav.classList.contains('active')) {
+                    mainNav.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
