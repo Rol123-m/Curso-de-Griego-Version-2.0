@@ -343,25 +343,47 @@ class SemanaManager {
         { titulo: 'Juego 2', url: 'semanas/semana12/juegos/juego2.html', icono: '🎯', nota: 'Refuerza el futuro medio' }
     ]
 },
-            13: { 
-                titulo: "Imperfecto Indicativo", 
-                tema: "Tiempo pasado continuo", 
-                recursos: [
-                    { tipo: 'html', titulo: 'Contenido semana 13', url: 'recursos_semana13.html', icono: '📚' }
-                ] 
-            },
-            14: { 
-                titulo: "Segundo Aoristo", 
-                tema: "Aoristo con aumento", 
-                recursos: [
-                    { tipo: 'html', titulo: 'Contenido semana 14', url: 'recursos_semana14.html', icono: '📚' }
-                ] 
-            },
+13: {
+    titulo: "El Imperfecto",
+    tema: "Imperfecto Activo y Medio/Pasivo Indicativo",
+    recursos: [
+        { tipo: 'html', titulo: 'Introducción al Imperfecto', url: 'semanas/semana 13/html/1. introducción al imperfecto .html', icono: '1️⃣' },
+        { tipo: 'html', titulo: 'Imperfecto Activo Indicativo', url: 'semanas/semana 13/html/2. imperfecto activo indicativo.html', icono: '2️⃣' },
+        { tipo: 'html', titulo: 'Imperfecto Pasivo Indicativo', url: 'semanas/semana 13/html/3. imperfecto Pasivo Indicativo .html', icono: '3️⃣' },
+        { tipo: 'html', titulo: 'Carácter del Imperfecto', url: 'semanas/semana 13/html/4. carácter del imperfecto. .html', icono: '4️⃣' },
+        { tipo: 'html', titulo: 'Resumen del Imperfecto', url: 'semanas/semana 13/html/5. Resumen.html', icono: '5️⃣' },
+        { tipo: 'html', titulo: 'Vocabulario Semana 13', url: 'semanas/semana 13/html/vocabulario semana13.html', icono: '📖' }
+    ],
+    juegos: [
+        { titulo: 'Empareja las palabras', url: 'semanas/semana 13/juegos/3. Empareja las palabras.html', icono: '🔄', nota: 'Arrastra la palabra griega a su traducción' },
+        { titulo: 'Juego de palabras', url: 'semanas/semana 13/juegos/4.juego de palabras, solo en la computadora.html', icono: '🔠', nota: 'Selecciona la respuesta correcta (solo computadora)' },
+        { titulo: 'Juego 1 - Imperfecto', url: 'semanas/semana 13/juegos/juego1.html', icono: '🎮', nota: 'Practica el imperfecto griego' },
+        { titulo: 'Juego 2 - Imperfecto', url: 'semanas/semana 13/juegos/juego2.html', icono: '🎯', nota: 'Refuerza el imperfecto medio/pasivo' }
+    ]
+},
+14: {
+    titulo: "El Aoristo Segundo",
+    tema: "Aoristo Segundo Activo y Medio - Acción pasada indefinida",
+    recursos: [
+        { tipo: 'html', titulo: 'Introducción al Aoristo', url: 'semanas/semana 14/html/1. Introducción al aoristo.html', icono: '1️⃣' },
+        { tipo: 'html', titulo: 'Segundo Aoristo Activo', url: 'semanas/semana 14/html/2. Segundo aoristo activo.html', icono: '2️⃣' },
+        { tipo: 'html', titulo: 'Segundo Aoristo Activo (Continuación)', url: 'semanas/semana 14/html/3. Segundo Aoristo Activo, continuación.html', icono: '3️⃣' },
+        { tipo: 'html', titulo: 'Segundo Aoristo Medio', url: 'semanas/semana 14/html/4.segundo aoristo pasivo.html', icono: '4️⃣' },
+        { tipo: 'html', titulo: 'Resumen del Aoristo Segundo', url: 'semanas/semana 14/html/5. Resumen.html', icono: '5️⃣' },
+        { tipo: 'html', titulo: 'Vocabulario Semana 14', url: 'semanas/semana 14/html/vocabulario semana14.html', icono: '📖' }
+    ],
+    juegos: [
+        { titulo: 'Empareja las palabras', url: 'semanas/semana 14/juegos/3. Empareja las palabras.html', icono: '🔄', nota: 'Arrastra la palabra griega a su traducción' },
+        { titulo: 'Juego de palabras', url: 'semanas/semana 14/juegos/4.juego de palabras, solo en la computadora.html', icono: '🔠', nota: 'Selecciona la respuesta correcta (solo computadora)' },
+        { titulo: 'Juego 1 - Aoristo', url: 'semanas/semana 14/juegos/juego1.html', icono: '🎮', nota: 'Practica el aoristo segundo griego' },
+        { titulo: 'Juego 2 - Aoristo', url: 'semanas/semana 14/juegos/juego2.html', icono: '🎯', nota: 'Refuerza el aoristo medio y activo' }
+    ]
+},
             15: { 
                 titulo: "Consolidación I", 
                 tema: "Repaso general", 
                 recursos: [
-                    { tipo: 'html', titulo: 'Contenido semana 15', url: 'recursos_semana_consolidación.html', icono: '📚' }
+                    { tipo: 'html', titulo: 'Contenido semana 15', url: 'semanas/semana 15/resumenDeContenido.html', icono: '📚' }
                 ] 
             },
             16: { 
