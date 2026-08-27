@@ -344,7 +344,7 @@ class SemanaManager {
     ]
 },
 13: {
-    titulo: "El Imperfecto",
+    titulo: "El Imperfecto",   
     tema: "Imperfecto Activo y Medio/Pasivo Indicativo",
     recursos: [
         { tipo: 'html', titulo: 'Introducción al Imperfecto', url: 'semanas/semana 13/html/1. introducción al imperfecto .html', icono: '1️⃣' },
@@ -362,7 +362,7 @@ class SemanaManager {
     ]
 },
 14: {
-    titulo: "El Aoristo Segundo",
+    titulo: "El Aoristo Segundo",   
     tema: "Aoristo Segundo Activo y Medio - Acción pasada indefinida",
     recursos: [
         { tipo: 'html', titulo: 'Introducción al Aoristo', url: 'semanas/semana 14/html/1. Introducción al aoristo.html', icono: '1️⃣' },
@@ -386,12 +386,23 @@ class SemanaManager {
                     { tipo: 'html', titulo: 'Contenido semana 15', url: 'semanas/semana 15/resumenDeContenido.html', icono: '📚' }
                 ] 
             },
-            16: { 
-                titulo: "Primer Aoristo", 
-                tema: "Aoristo sigma", 
-                recursos: [
-                    { tipo: 'html', titulo: 'Contenido semana 16', url: 'recursos_semana17.html', icono: '📚' }
-                ] 
+            16:  {
+    titulo: "Particularidades del Primer Aoristo y Aoristo Medio",
+    tema: "Primer Aoristo: Particularidades, Aoristo Medio y Verbos Deponentes",
+    recursos: [
+        { tipo: 'html', titulo: 'Introducción al Primer Aoristo', url: 'semanas/semana16/html/1. Introducción al primer aoristo.html', icono: '1️⃣' },
+        { tipo: 'html', titulo: 'Particularidades del Primer Aoristo', url: 'semanas/semana16/html/2. Particularidades del primer aoristo.html', icono: '2️⃣' },
+        { tipo: 'html', titulo: 'Primer Aoristo Medio', url: 'semanas/semana16/html/3. Aoristo medio.html', icono: '3️⃣' },
+        { tipo: 'html', titulo: 'Consolidación del Primer Aoristo', url: 'semanas/semana16/html/contenido semana 17.html', icono: '4️⃣' },
+        { tipo: 'html', titulo: 'Examen del Primer Aoristo', url: 'semanas/semana16/html/examen semana 15.html', icono: '📝' },
+        { tipo: 'html', titulo: 'Vocabulario Semana 16', url: 'semanas/semana16/html/vocabulario semana15.html', icono: '📖' }
+    ],
+    juegos: [
+        { titulo: 'Empareja las palabras', url: 'semanas/semana16/juegos/3. Empareja las palabras.html', icono: '🔄', nota: 'Arrastra la palabra griega a su traducción' },
+        { titulo: 'Empareja las palabras', url: 'semanas/semana16/juegos/3. Empareja las palabras.html', icono: '🔄', nota: 'Arrastra la palabra griega a su traducción' },
+        { titulo: 'Completa el Aoristo', url: 'semanas/semana16/juegos/Completa el Aoristo.html', icono: '✏️', nota: 'Completa la forma correcta del aoristo' }
+    ] 
+
             },
             17: { 
                 titulo: "Aoristo/Futuro Pasivo", 
