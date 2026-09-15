@@ -344,7 +344,7 @@ class SemanaManager {
     ]
 },
 13: {
-    titulo: "El Imperfecto",   
+    titulo: "El Imperfecto",     
     tema: "Imperfecto Activo y Medio/Pasivo Indicativo",
     recursos: [
         { tipo: 'html', titulo: 'Introducción al Imperfecto', url: 'semanas/semana 13/html/1. introducción al imperfecto .html', icono: '1️⃣' },
@@ -404,12 +404,29 @@ class SemanaManager {
     ] 
 
             },
-            17: { 
-                titulo: "Aoristo/Futuro Pasivo", 
-                tema: "Formas pasivas de aoristo y futuro", 
-                recursos: [
-                    { tipo: 'html', titulo: 'Contenido semana 17', url: 'recursos_semana18.html', icono: '📚' }
-                ] 
+               17: {
+    titulo: "El Aoristo y Futuro Pasivo",
+    tema: "Aoristo Pasivo y Futuro Pasivo Indicativo - La Sexta Forma Principal",
+    recursos: [
+        { tipo: 'html', titulo: 'Introducción al Aoristo y Futuro Pasivo', url: 'semanas/semana17/html/1. Introduccion al aoristo y futuro pasivo.html', icono: '1️⃣' },
+        { tipo: 'html', titulo: 'Curiosidad Exegética: El Pasivo Divino', url: 'semanas/semana17/html/2. Curiosidad exegetica.html', icono: '2️⃣' },
+        { tipo: 'html', titulo: 'Objetivos de Aprendizaje', url: 'semanas/semana17/html/3. Objetivos de aprendizaje.html', icono: '3️⃣' },
+        { tipo: 'html', titulo: 'Comparación con el Español', url: 'semanas/semana17/html/4. Comparacion con el espanol.html', icono: '4️⃣' },
+        { tipo: 'html', titulo: 'Aoristo Pasivo 1ª Conjugación', url: 'semanas/semana17/html/5. Aoristo pasivo primera conjugacion.html', icono: '5️⃣' },
+        { tipo: 'html', titulo: 'Aoristo Pasivo 2ª Conjugación', url: 'semanas/semana17/html/6. Aoristo pasivo segunda conjugacion.html', icono: '6️⃣' },
+        { tipo: 'html', titulo: 'Futuro Pasivo 1ª Conjugación', url: 'semanas/semana17/html/7. Futuro pasivo primera conjugacion.html', icono: '7️⃣' },
+        { tipo: 'html', titulo: 'Diferencias entre Futuro y Aoristo Pasivo', url: 'semanas/semana17/html/8. Diferencias entre futuro y aoristo pasivo.html', icono: '8️⃣' },
+        { tipo: 'html', titulo: 'Futuros Deponentes', url: 'semanas/semana17/html/9. Futuros deponentes.html', icono: '9️⃣' },
+        { tipo: 'html', titulo: 'Futuro Pasivo 2ª Conjugación', url: 'semanas/semana17/html/10. Futuro pasivo segunda conjugacion.html', icono: '🔟' },
+        { tipo: 'html', titulo: 'Resumen Final', url: 'semanas/semana17/html/11. Resumen final.html', icono: '📋' },
+        { tipo: 'html', titulo: 'Vocabulario Semana 17', url: 'semanas/semana17/html/vocabulario semana17.html', icono: '📖' }
+    ],
+    juegos: [
+        { titulo: 'Empareja las palabras', url: 'semanas/semana17/juegos/3. Empareja las palabras.html', icono: '🔄', nota: 'Toca la palabra griega y su traducción para emparejarlas' },
+        { titulo: 'Práctica de Aoristo', url: 'semanas/semana17/juegos/practicaaoristos.html', icono: '🎯', nota: 'Practica la conjugación del aoristo activo y medio' },
+        { titulo: 'Completa el Aoristo Pasivo', url: 'semanas/semana17/juegos/Completa el Aoristo Pasivo.html', icono: '✏️', nota: 'Completa la forma correcta del aoristo y futuro pasivo' }
+    ]
+
             },
             18: { 
                 titulo: "Perfecto", 
