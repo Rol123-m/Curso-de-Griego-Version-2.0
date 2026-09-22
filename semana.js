@@ -428,13 +428,28 @@ class SemanaManager {
     ]
 
             },
-            18: { 
-                titulo: "Perfecto", 
-                tema: "Tiempo perfecto activo", 
-                recursos: [
-                    { tipo: 'html', titulo: 'Contenido semana 18', url: 'recursos_semana19.html', icono: '📚' }
-                ] 
-            },
+           18: {
+    titulo: "El Tiempo Perfecto",
+    tema: "Perfecto Activo, Medio/Pasivo y Segundo Perfecto - La Acción con Eco Eterno",
+    recursos: [
+        { tipo: 'html', titulo: 'Introducción Teológica: Τετέλεσται', url: 'semanas/semana18/html/1. Introduccion teologica.html', icono: '1️⃣' },
+        { tipo: 'html', titulo: 'Concepto del Perfecto', url: 'semanas/semana18/html/2. Concepto perfecto.html', icono: '2️⃣' },
+        { tipo: 'html', titulo: 'Formación del Perfecto Activo', url: 'semanas/semana18/html/3. Formacion activo.html', icono: '3️⃣' },
+        { tipo: 'html', titulo: 'Formación del Perfecto Medio/Pasivo', url: 'semanas/semana18/html/4. Formacion pasivo.html', icono: '4️⃣' },
+        { tipo: 'html', titulo: 'Reglas de Reduplicación', url: 'semanas/semana18/html/5. Reduplicacion.html', icono: '5️⃣' },
+        { tipo: 'html', titulo: 'Segundo Perfecto', url: 'semanas/semana18/html/6. Segundo perfecto.html', icono: '6️⃣' },
+        { tipo: 'html', titulo: 'Voz Media del Perfecto', url: 'semanas/semana18/html/7. Voz media.html', icono: '7️⃣' },
+        { tipo: 'html', titulo: 'Ejemplos Bíblicos', url: 'semanas/semana18/html/8. Ejemplos biblicos.html', icono: '8️⃣' },
+        { tipo: 'html', titulo: 'Resumen del Perfecto', url: 'semanas/semana18/html/9. Resumen.html', icono: '9️⃣' },
+        { tipo: 'html', titulo: 'Tabla de Verbos en Perfecto', url: 'semanas/semana18/html/10. Tabla de verbos.html', icono: '🔟' },
+        { tipo: 'html', titulo: 'Vocabulario Semana 18', url: 'semanas/semana18/html/vocabularioSemana18.html', icono: '📖' }
+    ],
+    juegos: [
+        { titulo: 'Empareja las palabras', url: 'semanas/semana18/juegos/3. Empareja las palabras.html', icono: '🔄', nota: 'Toca la palabra griega y su traducción para emparejarlas' },
+        { titulo: 'Completa el Perfecto', url: 'semanas/semana18/juegos/Completa el Perfecto.html', icono: '✏️', nota: 'Completa la forma correcta del perfecto' },
+        { titulo: 'Práctica de Perfecto', url: 'semanas/semana18/juegos/practicaperfecto.html', icono: '🎯', nota: 'Practica la conjugación del perfecto activo y medio/pasivo' }
+    ]
+},
             19: { 
                 titulo: "Introducción a Participios", 
                 tema: "Participios presentes", 
