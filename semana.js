@@ -450,13 +450,28 @@ class SemanaManager {
         { titulo: 'Práctica de Perfecto', url: 'semanas/semana18/juegos/practicaperfecto.html', icono: '🎯', nota: 'Practica la conjugación del perfecto activo y medio/pasivo' }
     ]
 },
-            19: { 
-                titulo: "Introducción a Participios", 
-                tema: "Participios presentes", 
-                recursos: [
-                    { tipo: 'html', titulo: 'Contenido semana 19', url: 'recursos_semana20.html', icono: '📚' }
-                ] 
-            },
+          19: {
+    titulo: "Introducción a los Participios",
+    tema: "Participios Presente, Aoristo y Perfecto - El Verbo-Adjetivo",
+    recursos: [
+        { tipo: 'html', titulo: 'Introducción a los Participios', url: 'semanas/semana19/html/1. Introduccion a los participios.html', icono: '1️⃣' },
+        { tipo: 'html', titulo: 'Concepto y Visión', url: 'semanas/semana19/html/2. Concepto y vision.html', icono: '2️⃣' },
+        { tipo: 'html', titulo: 'Formación', url: 'semanas/semana19/html/3. Formacion.html', icono: '3️⃣' },
+        { tipo: 'html', titulo: 'Aspecto', url: 'semanas/semana19/html/4. Aspecto.html', icono: '4️⃣' },
+        { tipo: 'html', titulo: 'Usos: Adverbial y Adjetival', url: 'semanas/semana19/html/5. Usos adverbial y adjetival.html', icono: '5️⃣' },
+        { tipo: 'html', titulo: 'Voz y Negación', url: 'semanas/semana19/html/6. Voz y negacion.html', icono: '6️⃣' },
+        { tipo: 'html', titulo: 'Ejemplos Bíblicos', url: 'semanas/semana19/html/7. Ejemplos biblicos.html', icono: '7️⃣' },
+        { tipo: 'html', titulo: 'Ejercicios', url: 'semanas/semana19/html/8. Ejercicios.html', icono: '8️⃣' },
+        { tipo: 'html', titulo: 'Credo Apostólico', url: 'semanas/semana19/html/9. Credo apostolico.html', icono: '9️⃣' },
+        { tipo: 'html', titulo: 'Resumen y Tarea', url: 'semanas/semana19/html/10. Resumen y tarea.html', icono: '🔟' },
+        { tipo: 'html', titulo: 'Vocabulario Semana 19', url: 'semanas/semana19/html/vocabularioSemana19.html', icono: '📖' }
+    ],
+    juegos: [
+        { titulo: 'Empareja las palabras', url: 'semanas/semana19/juegos/3. Empareja las palabras.html', icono: '🔄', nota: 'Toca la palabra griega y su traducción para emparejarlas' },
+        { titulo: 'Completa el Participio', url: 'semanas/semana19/juegos/Completa el Participio.html', icono: '✏️', nota: 'Completa la forma correcta del participio' },
+        { titulo: 'Práctica de Participios', url: 'semanas/semana19/juegos/practicaparticipios.html', icono: '🎯', nota: 'Practica participios presente, aoristo y perfecto' }
+    ]
+},
             20: { 
                 titulo: "Participios Adverbiales I", 
                 tema: "Participios circunstanciales", 
