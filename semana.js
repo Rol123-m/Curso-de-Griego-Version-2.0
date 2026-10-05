@@ -493,13 +493,28 @@ class SemanaManager {
         { titulo: 'Juego Integrador', url: 'semanas/semana20/juegos/juegoIntegrador.html', icono: '🎮', nota: 'Caza-Participios y Rompecabezas en un solo juego' }
     ]
 },
-            21: { 
-                titulo: "Participios Adverbiales II", 
-                tema: "Participios causales y concesivos", 
-                recursos: [
-                    { tipo: 'html', titulo: 'Contenido semana 21', url: 'recursos-semana22.html', icono: '📚' }
-                ] 
-            },
+            21: {
+    titulo: "El Participio Aoristo Adverbial",
+    tema: "Participio Aoristo - Acción Completa, Anterioridad y Usos Adverbiales",
+    recursos: [
+        { tipo: 'html', titulo: 'Introducción al Participio Aoristo', url: 'semanas/semana21/html/1. Introduccion al participio aoristo.html', icono: '1️⃣' },
+        { tipo: 'html', titulo: 'Ejemplo Exegético: Hechos 19:2', url: 'semanas/semana21/html/2. Ejemplo exegetico.html', icono: '2️⃣' },
+        { tipo: 'html', titulo: 'Formación', url: 'semanas/semana21/html/3. Formacion.html', icono: '3️⃣' },
+        { tipo: 'html', titulo: 'Paradigmas', url: 'semanas/semana21/html/4. Paradigmas.html', icono: '4️⃣' },
+        { tipo: 'html', titulo: 'Segundo Aoristo', url: 'semanas/semana21/html/5. Segundo aoristo.html', icono: '5️⃣' },
+        { tipo: 'html', titulo: 'Relación Temporal', url: 'semanas/semana21/html/6. Relacion temporal.html', icono: '6️⃣' },
+        { tipo: 'html', titulo: 'Traducción', url: 'semanas/semana21/html/7. Traduccion.html', icono: '7️⃣' },
+        { tipo: 'html', titulo: 'Vocabulario', url: 'semanas/semana21/html/8. Vocabulario.html', icono: '8️⃣' },
+        { tipo: 'html', titulo: 'Ejercicios', url: 'semanas/semana21/html/9. Ejercicios.html', icono: '9️⃣' },
+        { tipo: 'html', titulo: 'Vocabulario Semana 21', url: 'semanas/semana21/html/vocabularioSemana21.html', icono: '📖' }
+    ],
+    juegos: [
+        { titulo: 'Empareja las palabras', url: 'semanas/semana21/juegos/3. Empareja las palabras.html', icono: '🔄', nota: 'Toca la palabra griega y su traducción para emparejarlas' },
+        { titulo: 'Caza-Participios Aoristo', url: 'semanas/semana21/juegos/cazaParticipiosAoristo.html', icono: '🔍', nota: 'Encuentra el participio aoristo en cada versículo' },
+        { titulo: 'Rompecabezas Aoristo', url: 'semanas/semana21/juegos/rompecabezasAoristo.html', icono: '🧩', nota: 'Arma el participio aoristo tocando las piezas' },
+        { titulo: 'Clasifica los Participios', url: 'semanas/semana21/juegos/clasificaParticipios.html', icono: '🎯', nota: 'Clasifica participios presente, aoristo y perfecto' }
+    ]
+},
             22: { 
                 titulo: "Participios Adjetivales", 
                 tema: "Participios atributivos", 
