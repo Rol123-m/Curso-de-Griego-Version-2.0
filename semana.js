@@ -472,13 +472,27 @@ class SemanaManager {
         { titulo: 'Práctica de Participios', url: 'semanas/semana19/juegos/practicaparticipios.html', icono: '🎯', nota: 'Practica participios presente, aoristo y perfecto' }
     ]
 },
-            20: { 
-                titulo: "Participios Adverbiales I", 
-                tema: "Participios circunstanciales", 
-                recursos: [
-                    { tipo: 'html', titulo: 'Contenido semana 20', url: 'recursos-semana21.html', icono: '📚' }
-                ] 
-            },
+          20: {
+    titulo: "El Participio Presente",
+    tema: "Participio Presente - Acción Continua y Usos Adverbiales",
+    recursos: [
+        { tipo: 'html', titulo: 'Introducción al Participio Presente', url: 'semanas/semana20/html/1. Introduccion al participio presente.html', icono: '1️⃣' },
+        { tipo: 'html', titulo: 'Ejemplo Exegético: 2 Corintios 3:18', url: 'semanas/semana20/html/2. Ejemplo exegetico.html', icono: '2️⃣' },
+        { tipo: 'html', titulo: 'Formación del Participio Presente', url: 'semanas/semana20/html/3. Formacion.html', icono: '3️⃣' },
+        { tipo: 'html', titulo: 'Paradigmas', url: 'semanas/semana20/html/4. Paradigmas.html', icono: '4️⃣' },
+        { tipo: 'html', titulo: 'Procedimiento de Traducción', url: 'semanas/semana20/html/5. Traduccion.html', icono: '5️⃣' },
+        { tipo: 'html', titulo: 'Usos Adverbiales', url: 'semanas/semana20/html/6. Usos adverbiales.html', icono: '6️⃣' },
+        { tipo: 'html', titulo: 'Resumen', url: 'semanas/semana20/html/7. Resumen.html', icono: '7️⃣' },
+        { tipo: 'html', titulo: 'Ejercicios', url: 'semanas/semana20/html/8. Ejercicios.html', icono: '8️⃣' },
+        { tipo: 'html', titulo: 'Vocabulario Semana 20', url: 'semanas/semana20/html/vocabularioSemana20.html', icono: '📖' }
+    ],
+    juegos: [
+        { titulo: 'Empareja las palabras', url: 'semanas/semana20/juegos/3. Empareja las palabras.html', icono: '🔄', nota: 'Toca la palabra griega y su traducción para emparejarlas' },
+        { titulo: 'Caza-Participios', url: 'semanas/semana20/juegos/cazaParticipios.html', icono: '🔍', nota: 'Encuentra el participio presente en cada versículo' },
+        { titulo: 'Rompecabezas de Participios', url: 'semanas/semana20/juegos/rompecabezas.html', icono: '🧩', nota: 'Arma el participio tocando las piezas' },
+        { titulo: 'Juego Integrador', url: 'semanas/semana20/juegos/juegoIntegrador.html', icono: '🎮', nota: 'Caza-Participios y Rompecabezas en un solo juego' }
+    ]
+},
             21: { 
                 titulo: "Participios Adverbiales II", 
                 tema: "Participios causales y concesivos", 
