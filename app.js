@@ -12,7 +12,7 @@ window.CONFIG = {
     
     // FECHA DE INICIO GLOBAL PARA TODOS LOS ESTUDIANTES
     // Martes 3 de marzo de 2026 a las 00:00 horas
-    FECHA_INICIO_GLOBAL: "2026-03-02T00:00:00-05:00",
+    FECHA_INICIO_GLOBAL: "2026-05-26T00:00:00-05:00", 
 
     // Configuración de grupos
     GRUPOS: {
