@@ -633,13 +633,31 @@ class SemanaManager {
         { titulo: 'Gran Repaso del Imperativo', url: 'semanas/semana26/juegos/juegoResumenImperativo.html', icono: '🏆', nota: 'Resumen: persona, aspecto y prohibición' }
     ]
 },
-            27: { 
-                titulo: "Conjugaciones Atemáticas", 
-                tema: "Verbos atemáticos e irregulares", 
-                recursos: [
-                    { tipo: 'html', titulo: 'Contenido semana 27', url: 'recursos-semana28.html', icono: '📚' }
-                ] 
-            },
+           27: {
+    titulo: "Verbos en -μι (Conjugación Atemática)",
+    tema: "Verbos en -μι: 5 Reglas, Paradigmas y Reconocimiento",
+    recursos: [
+        { tipo: 'html', titulo: 'Importancia Exegética: La Cruz en Gálatas 6:14', url: 'semanas/semana27/html/1. Exegesis.html', icono: '1️⃣' },
+        { tipo: 'html', titulo: 'Introducción a los Verbos en -μι', url: 'semanas/semana27/html/2. Introduccion.html', icono: '2️⃣' },
+        { tipo: 'html', titulo: 'Las Cuatro Clases de Verbos en -μι', url: 'semanas/semana27/html/3. Cuatro clases.html', icono: '3️⃣' },
+        { tipo: 'html', titulo: 'Regla 1: Reduplicación con Iota', url: 'semanas/semana27/html/4. Regla 1 reduplicacion.html', icono: '4️⃣' },
+        { tipo: 'html', titulo: 'Regla 2: Sin Vocal de Conexión', url: 'semanas/semana27/html/5. Regla 2 sin vocal tematica.html', icono: '5️⃣' },
+        { tipo: 'html', titulo: 'Regla 3: Tres Terminaciones', url: 'semanas/semana27/html/6. Regla 3 tres terminaciones.html', icono: '6️⃣' },
+        { tipo: 'html', titulo: 'Regla 4: Ablaut', url: 'semanas/semana27/html/7. Regla 4 ablaut.html', icono: '7️⃣' },
+        { tipo: 'html', titulo: 'Regla 5: Aoristo Kappa', url: 'semanas/semana27/html/8. Regla 5 aoristo kappa.html', icono: '8️⃣' },
+        { tipo: 'html', titulo: 'Paradigma Completo: δίδωμι', url: 'semanas/semana27/html/9. Paradigma didomi.html', icono: '9️⃣' },
+        { tipo: 'html', titulo: 'Práctica de Reconocimiento', url: 'semanas/semana27/html/10. Practica.html', icono: '🔟' },
+        { tipo: 'html', titulo: 'Vocabulario Esencial', url: 'semanas/semana27/html/11. Vocabulario.html', icono: '📚' },
+        { tipo: 'html', titulo: 'Vocabulario Semana 27', url: 'semanas/semana27/html/vocabularioSemana27.html', icono: '📖' }
+    ],
+    juegos: [
+        { titulo: 'Empareja las palabras', url: 'semanas/semana27/juegos/3. Empareja las palabras.html', icono: '🔄', nota: 'Toca la palabra griega y su traducción para emparejarlas' },
+        { titulo: 'Caza-Verbos en -μι', url: 'semanas/semana27/juegos/cazaVerbosMi.html', icono: '🔍', nota: 'Encuentra el verbo en -μι en cada versículo' },
+        { titulo: 'Clasifica Verbos en -μι', url: 'semanas/semana27/juegos/clasificaVerbosMi.html', icono: '🎯', nota: 'Clasifica clase, tiempo y persona' },
+        { titulo: 'Rompecabezas Verbos -μι', url: 'semanas/semana27/juegos/rompecabezasVerbosMi.html', icono: '🧩', nota: 'Arma la forma verbal atemática' },
+        { titulo: 'Gran Repaso de Verbos -μι', url: 'semanas/semana27/juegos/juegoResumenVerbosMi.html', icono: '🏆', nota: 'Resumen: clase, tiempo y persona' }
+    ]
+},
             28: { 
                 titulo: "Consolidación Final", 
                 tema: "Repaso completo de gramática", 
