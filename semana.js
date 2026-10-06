@@ -585,13 +585,30 @@ class SemanaManager {
         { titulo: 'Gran Repaso del Subjuntivo', url: 'semanas/semana24/juegos/juegoResumenSubjuntivo.html', icono: '🏆', nota: 'Resumen: uso, forma y partícula introductoria' }
     ]
 },
-            25: { 
-                titulo: "Infinitivo", 
-                tema: "Infinitivos y oraciones infinitivas", 
-                recursos: [
-                    { tipo: 'html', titulo: 'Contenido semana 25', url: 'recursos-semana26.html', icono: '📚' }
-                ] 
-            },
+            25: {
+    titulo: "El Infinitivo Griego",
+    tema: "Infinitivo: Sustantivado, Complementario, con Preposición y de Propósito",
+    recursos: [
+        { tipo: 'html', titulo: 'Introducción al Infinitivo', url: 'semanas/semana25/html/1. Introduccion al infinitivo.html', icono: '1️⃣' },
+        { tipo: 'html', titulo: 'Ejemplo Exegético: 1 Corintios 15:25', url: 'semanas/semana25/html/2. Ejemplo exegetico.html', icono: '2️⃣' },
+        { tipo: 'html', titulo: 'Aspecto vs Tiempo', url: 'semanas/semana25/html/3. Aspecto vs tiempo.html', icono: '3️⃣' },
+        { tipo: 'html', titulo: 'Formación del Infinitivo', url: 'semanas/semana25/html/4. Formacion.html', icono: '4️⃣' },
+        { tipo: 'html', titulo: 'Infinitivo Sustantivado', url: 'semanas/semana25/html/5. Infinitivo sustantivado.html', icono: '5️⃣' },
+        { tipo: 'html', titulo: 'Infinitivo Complementario', url: 'semanas/semana25/html/6. Infinitivo complementario.html', icono: '6️⃣' },
+        { tipo: 'html', titulo: 'Infinitivo con Preposición', url: 'semanas/semana25/html/7. Infinitivo con preposicion.html', icono: '7️⃣' },
+        { tipo: 'html', titulo: 'Infinitivo de Propósito', url: 'semanas/semana25/html/8. Infinitivo de proposito.html', icono: '8️⃣' },
+        { tipo: 'html', titulo: 'Vocabulario', url: 'semanas/semana25/html/9. Vocabulario.html', icono: '9️⃣' },
+        { tipo: 'html', titulo: 'Ejercicios', url: 'semanas/semana25/html/10. Ejercicios.html', icono: '🔟' },
+        { tipo: 'html', titulo: 'Vocabulario Semana 25', url: 'semanas/semana25/html/vocabularioSemana25.html', icono: '📖' }
+    ],
+    juegos: [
+        { titulo: 'Empareja las palabras', url: 'semanas/semana25/juegos/3. Empareja las palabras.html', icono: '🔄', nota: 'Toca la palabra griega y su traducción para emparejarlas' },
+        { titulo: 'Caza-Infinitivos', url: 'semanas/semana25/juegos/cazaInfinitivos.html', icono: '🔍', nota: 'Encuentra el infinitivo en cada versículo' },
+        { titulo: 'Clasifica Infinitivos', url: 'semanas/semana25/juegos/clasificaInfinitivos.html', icono: '🎯', nota: 'Clasifica sustantivado, complementario, preposición y propósito' },
+        { titulo: 'Rompecabezas Infinitivo', url: 'semanas/semana25/juegos/rompecabezasInfinitivo.html', icono: '🧩', nota: 'Arma la forma del infinitivo' },
+        { titulo: 'Gran Repaso del Infinitivo', url: 'semanas/semana25/juegos/juegoResumenInfinitivo.html', icono: '🏆', nota: 'Resumen: uso, aspecto y preposición' }
+    ]
+},
             26: { 
                 titulo: "Imperativo", 
                 tema: "Modo imperativo", 
