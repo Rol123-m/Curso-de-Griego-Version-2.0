@@ -609,13 +609,30 @@ class SemanaManager {
         { titulo: 'Gran Repaso del Infinitivo', url: 'semanas/semana25/juegos/juegoResumenInfinitivo.html', icono: '🏆', nota: 'Resumen: uso, aspecto y preposición' }
     ]
 },
-            26: { 
-                titulo: "Imperativo", 
-                tema: "Modo imperativo", 
-                recursos: [
-                    { tipo: 'html', titulo: 'Contenido semana 26', url: 'recursos-semana27.html', icono: '📚' }
-                ] 
-            },
+           26: {
+    titulo: "El Modo Imperativo",
+    tema: "Imperativo: Persona, Aspecto, Formación y Prohibiciones",
+    recursos: [
+        { tipo: 'html', titulo: 'Introducción al Imperativo', url: 'semanas/semana26/html/1. Introduccion al imperativo.html', icono: '1️⃣' },
+        { tipo: 'html', titulo: 'Perspectiva Exegética', url: 'semanas/semana26/html/2. Perspectiva exegetica.html', icono: '2️⃣' },
+        { tipo: 'html', titulo: 'Aspecto vs Tiempo', url: 'semanas/semana26/html/3. Aspecto vs tiempo.html', icono: '3️⃣' },
+        { tipo: 'html', titulo: 'Persona', url: 'semanas/semana26/html/4. Persona.html', icono: '4️⃣' },
+        { tipo: 'html', titulo: 'Formación', url: 'semanas/semana26/html/5. Formacion.html', icono: '5️⃣' },
+        { tipo: 'html', titulo: 'Paradigmas', url: 'semanas/semana26/html/6. Paradigmas.html', icono: '6️⃣' },
+        { tipo: 'html', titulo: 'Usos del Imperativo', url: 'semanas/semana26/html/7. Usos del imperativo.html', icono: '7️⃣' },
+        { tipo: 'html', titulo: 'Prohibiciones', url: 'semanas/semana26/html/8. Prohibiciones.html', icono: '8️⃣' },
+        { tipo: 'html', titulo: 'Vocabulario', url: 'semanas/semana26/html/9. Vocabulario.html', icono: '9️⃣' },
+        { tipo: 'html', titulo: 'Ejercicios', url: 'semanas/semana26/html/10. Ejercicios.html', icono: '🔟' },
+        { tipo: 'html', titulo: 'Vocabulario Semana 26', url: 'semanas/semana26/html/vocabularioSemana26.html', icono: '📖' }
+    ],
+    juegos: [
+        { titulo: 'Empareja las palabras', url: 'semanas/semana26/juegos/3. Empareja las palabras.html', icono: '🔄', nota: 'Toca la palabra griega y su traducción para emparejarlas' },
+        { titulo: 'Caza-Imperativos', url: 'semanas/semana26/juegos/cazaImperativos.html', icono: '🔍', nota: 'Encuentra el imperativo en cada versículo' },
+        { titulo: 'Clasifica Imperativos', url: 'semanas/semana26/juegos/clasificaImperativos.html', icono: '🎯', nota: 'Clasifica persona, aspecto y voz' },
+        { titulo: 'Rompecabezas Imperativo', url: 'semanas/semana26/juegos/rompecabezasImperativo.html', icono: '🧩', nota: 'Arma la forma del imperativo' },
+        { titulo: 'Gran Repaso del Imperativo', url: 'semanas/semana26/juegos/juegoResumenImperativo.html', icono: '🏆', nota: 'Resumen: persona, aspecto y prohibición' }
+    ]
+},
             27: { 
                 titulo: "Conjugaciones Atemáticas", 
                 tema: "Verbos atemáticos e irregulares", 
