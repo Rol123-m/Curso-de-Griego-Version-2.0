@@ -515,13 +515,28 @@ class SemanaManager {
         { titulo: 'Clasifica los Participios', url: 'semanas/semana21/juegos/clasificaParticipios.html', icono: '🎯', nota: 'Clasifica participios presente, aoristo y perfecto' }
     ]
 },
-            22: { 
-                titulo: "Participios Adjetivales", 
-                tema: "Participios atributivos", 
-                recursos: [
-                    { tipo: 'html', titulo: 'Contenido semana 22', url: 'recursos-semana23.html', icono: '📚' }
-                ] 
-            },
+           22: {
+    titulo: "Los Participios Adjetivales",
+    tema: "Participios Adjetivales - Atributivos y Sustantivos",
+    recursos: [
+        { tipo: 'html', titulo: 'Introducción a los Participios Adjetivales', url: 'semanas/semana22/html/1. Introduccion a los participios adjetivales.html', icono: '1️⃣' },
+        { tipo: 'html', titulo: 'Ejemplo Exegético: Romanos 1:3-4', url: 'semanas/semana22/html/2. Ejemplo exegetico.html', icono: '2️⃣' },
+        { tipo: 'html', titulo: 'Tipos de Participio Adjetival', url: 'semanas/semana22/html/3. Tipos.html', icono: '3️⃣' },
+        { tipo: 'html', titulo: 'Participio Atributivo', url: 'semanas/semana22/html/4. Atributivo.html', icono: '4️⃣' },
+        { tipo: 'html', titulo: 'Participio Sustantivo', url: 'semanas/semana22/html/5. Sustantivo.html', icono: '5️⃣' },
+        { tipo: 'html', titulo: 'Paradigmas', url: 'semanas/semana22/html/6. Paradigmas.html', icono: '6️⃣' },
+        { tipo: 'html', titulo: 'Aspecto', url: 'semanas/semana22/html/7. Aspecto.html', icono: '7️⃣' },
+        { tipo: 'html', titulo: 'Ejercicios', url: 'semanas/semana22/html/8. Ejercicios.html', icono: '8️⃣' },
+        { tipo: 'html', titulo: 'Vocabulario Semana 22', url: 'semanas/semana22/html/vocabularioSemana22.html', icono: '📖' }
+    ],
+    juegos: [
+        { titulo: 'Empareja las palabras', url: 'semanas/semana22/juegos/3. Empareja las palabras.html', icono: '🔄', nota: 'Toca la palabra griega y su traducción para emparejarlas' },
+        { titulo: 'Clasifica Participios Adjetivales', url: 'semanas/semana22/juegos/clasificaParticipiosAdjetivales.html', icono: '🎯', nota: 'Clasifica participios en atributivos o sustantivos' },
+        { titulo: 'Caza-Participio Adjetival', url: 'semanas/semana22/juegos/cazaParticipioAdjetival.html', icono: '🔍', nota: 'Encuentra el participio adjetival en versículos bíblicos' },
+        { titulo: 'Rompecabezas Adjetival', url: 'semanas/semana22/juegos/rompecabezasAdjetival.html', icono: '🧩', nota: 'Arma el participio adjetival tocando las piezas' },
+        { titulo: 'Juego Integrador', url: 'semanas/semana22/juegos/juegoIntegrador.html', icono: '🎮', nota: 'Clasifica y Caza en un solo juego' }
+    ]
+},
             23: { 
                 titulo: "Participios Combinativos", 
                 tema: "Participios con artículo", 
