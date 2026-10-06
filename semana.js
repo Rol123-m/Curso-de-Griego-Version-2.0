@@ -561,13 +561,30 @@ class SemanaManager {
         { titulo: 'Gran Repaso de Participios', url: 'semanas/semana23/juegos/juegoResumenParticipios.html', icono: '🏆', nota: 'Resumen de TODOS los participios: tipo, tiempo, voz y función' }
     ]
 },
-            24: { 
-                titulo: "Subjuntivo", 
-                tema: "Modo subjuntivo presente", 
-                recursos: [
-                    { tipo: 'html', titulo: 'Contenido semana 24', url: 'recursos-semana25.html', icono: '📚' }
-                ] 
-            },
+          24: {
+    titulo: "El Modo Subjuntivo",
+    tema: "Subjuntivo: Propósito, Condición, Exhortación y Negación Enfática",
+    recursos: [
+        { tipo: 'html', titulo: 'Introducción al Subjuntivo', url: 'semanas/semana24/html/1. Introduccion al subjuntivo.html', icono: '1️⃣' },
+        { tipo: 'html', titulo: 'Ejemplo Exegético: Juan 10:28', url: 'semanas/semana24/html/2. Ejemplo exegetico.html', icono: '2️⃣' },
+        { tipo: 'html', titulo: 'Aspecto vs Tiempo', url: 'semanas/semana24/html/3. Aspecto vs tiempo.html', icono: '3️⃣' },
+        { tipo: 'html', titulo: 'Formación del Subjuntivo', url: 'semanas/semana24/html/4. Formacion.html', icono: '4️⃣' },
+        { tipo: 'html', titulo: 'ἵνα + Subjuntivo', url: 'semanas/semana24/html/5. Hina mas subjuntivo.html', icono: '5️⃣' },
+        { tipo: 'html', titulo: 'ἐάν + Subjuntivo', url: 'semanas/semana24/html/6. Ean mas subjuntivo.html', icono: '6️⃣' },
+        { tipo: 'html', titulo: 'Subjuntivo Hortatorio', url: 'semanas/semana24/html/7. Subjuntivo hortatorio.html', icono: '7️⃣' },
+        { tipo: 'html', titulo: 'Negación Enfática', url: 'semanas/semana24/html/8. Negacion enfatica.html', icono: '8️⃣' },
+        { tipo: 'html', titulo: 'Vocabulario', url: 'semanas/semana24/html/9. Vocabulario.html', icono: '9️⃣' },
+        { tipo: 'html', titulo: 'Ejercicios', url: 'semanas/semana24/html/10. Ejercicios.html', icono: '🔟' },
+        { tipo: 'html', titulo: 'Vocabulario Semana 24', url: 'semanas/semana24/html/vocabularioSemana24.html', icono: '📖' }
+    ],
+    juegos: [
+        { titulo: 'Empareja las palabras', url: 'semanas/semana24/juegos/3. Empareja las palabras.html', icono: '🔄', nota: 'Toca la palabra griega y su traducción para emparejarlas' },
+        { titulo: 'Caza-Subjuntivos', url: 'semanas/semana24/juegos/cazaSubjuntivo.html', icono: '🔍', nota: 'Encuentra el verbo en subjuntivo en cada versículo' },
+        { titulo: 'Clasifica Usos del Subjuntivo', url: 'semanas/semana24/juegos/clasificaUsosSubjuntivo.html', icono: '🎯', nota: 'Clasifica propósito, condición, hortatorio, deliberativo y negación' },
+        { titulo: 'Rompecabezas Subjuntivo', url: 'semanas/semana24/juegos/rompecabezasSubjuntivo.html', icono: '🧩', nota: 'Arma la forma verbal del subjuntivo' },
+        { titulo: 'Gran Repaso del Subjuntivo', url: 'semanas/semana24/juegos/juegoResumenSubjuntivo.html', icono: '🏆', nota: 'Resumen: uso, forma y partícula introductoria' }
+    ]
+},
             25: { 
                 titulo: "Infinitivo", 
                 tema: "Infinitivos y oraciones infinitivas", 

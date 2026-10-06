@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Clasifica Construcciones | Semana 23</title>
+  <title>Clasifica Usos del Subjuntivo | Semana 24</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; user-select: none; -webkit-tap-highlight-color: transparent; }
     body { font-family: 'Segoe UI', 'Poppins', Arial, sans-serif; background: linear-gradient(145deg, #0a1628, #1a2a4a, #0d1f3c); min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 20px 15px 60px; color: white; }
@@ -16,7 +16,7 @@
     .game-container { width: 100%; max-width: 900px; }
     .question-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); border-radius: 24px; padding: clamp(20px, 4vw, 40px); border: 1px solid rgba(255, 215, 0, 0.1); margin-bottom: 20px; text-align: center; }
     .question-label { font-size: clamp(0.7rem, 1.5vw, 0.85rem); color: rgba(255, 215, 0, 0.5); text-transform: uppercase; letter-spacing: 3px; font-weight: 600; margin-bottom: 5px; }
-    .current-word { font-size: clamp(1.5rem, 4.5vw, 2.5rem); font-family: 'Times New Roman', 'New Athena Unicode', serif; color: #FFD700; font-weight: 700; margin: 15px 0; text-shadow: 0 2px 10px rgba(255,215,0,0.3); animation: popIn 0.4s ease; }
+    .current-word { font-size: clamp(1.3rem, 4vw, 2.2rem); font-family: 'Times New Roman', 'New Athena Unicode', serif; color: #FFD700; font-weight: 700; margin: 15px 0; text-shadow: 0 2px 10px rgba(255,215,0,0.3); animation: popIn 0.4s ease; }
     @keyframes popIn { 0% { transform: scale(0.8); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
     .instruction { color: rgba(255,255,255,0.7); margin-bottom: 15px; font-size: clamp(0.9rem, 2vw, 1rem); }
     .categories { display: grid; grid-template-columns: repeat(auto-fit, minmax(clamp(140px, 25vw, 220px), 1fr)); gap: clamp(10px, 2vw, 16px); margin-top: 20px; }
@@ -27,7 +27,7 @@
     .category-btn.wrong { border-color: #e74c3c; background: rgba(231, 76, 60, 0.2); color: #e74c3c; animation: shake 0.5s ease; }
     .category-btn:disabled { cursor: not-allowed; opacity: 0.5; }
     @keyframes shake { 0%, 100% { transform: translateX(0); } 20% { transform: translateX(-10px); } 40% { transform: translateX(10px); } 60% { transform: translateX(-6px); } 80% { transform: translateX(6px); } }
-    .feedback { margin-top: 20px; padding: clamp(12px, 2vw, 20px); border-radius: 14px; font-size: clamp(0.95rem, 2vw, 1.05rem); text-align: center; min-height: 50px; display: flex; align-items: center; justify-content: center; opacity: 0; transform: translateY(10px); transition: all 0.4s ease; }
+    .feedback { margin-top: 20px; padding: clamp(12px, 2vw, 20px); border-radius: 14px; font-size: clamp(0.9rem, 2vw, 1.05rem); text-align: center; min-height: 50px; display: flex; align-items: center; justify-content: center; opacity: 0; transform: translateY(10px); transition: all 0.4s ease; }
     .feedback.show { opacity: 1; transform: translateY(0); }
     .feedback.success { background: rgba(46, 204, 113, 0.15); border: 1px solid rgba(46, 204, 113, 0.3); color: #2ecc71; }
     .feedback.error { background: rgba(231, 76, 60, 0.15); border: 1px solid rgba(231, 76, 60, 0.3); color: #e74c3c; }
@@ -44,14 +44,14 @@
     @media (max-width: 480px) {
       .logo { width: 110px; }
       h1 { font-size: 1.1rem; }
-      .current-word { font-size: 1.3rem; }
+      .current-word { font-size: 1.1rem; }
     }
   </style>
 </head>
 <body>
   <img src="https://i.postimg.cc/wMJ2bCgV/mas-logos.jpg" class="logo" alt="Logo">
-  <h1>🎯 <span>Clasifica Construcciones</span></h1>
-  <div class="subtitle">✧ Semana 23: Perfecto, Genitivo y Perífrasis ✧</div>
+  <h1>🎯 <span>Clasifica Usos del Subjuntivo</span></h1>
+  <div class="subtitle">✧ Semana 24: Propósito, Condición, Exhortación ✧</div>
 
   <div id="progress">
     <div class="stat">📖 <span id="current-q">1</span>/<span id="total-q">18</span></div>
@@ -61,23 +61,10 @@
 
   <div class="game-container">
     <div class="question-card" id="questionCard">
-      <div class="question-label">CLASIFICA LA CONSTRUCCIÓN</div>
+      <div class="question-label">CLASIFICA EL USO</div>
       <div class="current-word" id="currentWord"></div>
-      <div class="instruction">¿Qué tipo de construcción es?</div>
-      <div class="categories">
-        <button class="category-btn" data-cat="perfecto">
-          <span class="emoji">🟣</span>
-          <span>Participio Perfecto</span>
-        </button>
-        <button class="category-btn" data-cat="genitivo">
-          <span class="emoji">🔷</span>
-          <span>Genitivo Absoluto</span>
-        </button>
-        <button class="category-btn" data-cat="perifrastica">
-          <span class="emoji">🟢</span>
-          <span>Perífrasis</span>
-        </button>
-      </div>
+      <div class="instruction">¿Qué uso tiene el subjuntivo en esta frase?</div>
+      <div class="categories" id="categories"></div>
       <div class="feedback" id="feedback"></div>
       <button class="next-btn" id="nextBtn"><span>Siguiente</span> <span>→</span></button>
     </div>
@@ -86,33 +73,37 @@
   <div class="overlay" id="overlay"></div>
 
   <script>
-    const construcciones = [
-      // PARTICIPIO PERFECTO
-      {word: "λελυκώς", type: "perfecto", desc: "Participio perfecto activo: habiendo desatado (estado)"},
-      {word: "λελυμένος", type: "perfecto", desc: "Participio perfecto medio/pasivo: habiendo sido desatado"},
-      {word: "γεγονώς", type: "perfecto", desc: "Participio perfecto (2°): habiendo llegado a ser"},
-      {word: "ἐληλυθώς", type: "perfecto", desc: "Participio perfecto (2°): habiendo venido"},
-      {word: "εἰληφώς", type: "perfecto", desc: "Participio perfecto (2°): habiendo tomado"},
-      {word: "ἀκηκοώς", type: "perfecto", desc: "Participio perfecto (2°): habiendo oído"},
-      {word: "εἰδώς", type: "perfecto", desc: "Participio perfecto con significado presente: sabiendo"},
-
-      // GENITIVO ABSOLUTO
-      {word: "αὐτοῦ λαλοῦντος", type: "genitivo", desc: "Genitivo absoluto: mientras él hablaba"},
-      {word: "τοῦ δαιμονίου ἐξελθόντος", type: "genitivo", desc: "Genitivo absoluto: cuando el demonio salió"},
-      {word: "ὀψίας γενομένης", type: "genitivo", desc: "Genitivo absoluto: al anochecer"},
-      {word: "ἐλθόντος αὐτοῦ", type: "genitivo", desc: "Genitivo absoluto: cuando él vino"},
-      {word: "ταῦτα εἰπόντος", type: "genitivo", desc: "Genitivo absoluto: habiendo dicho esto"},
-
-      // PERÍFRASIS
-      {word: "ἐστε σεσῳσμένοι", type: "perifrastica", desc: "Perífrasis: ustedes han sido salvos (y están)"},
-      {word: "ἦν διδάσκων", type: "perifrastica", desc: "Perífrasis: estaba enseñando"},
-      {word: "ἦσαν καθεύδοντες", type: "perifrastica", desc: "Perífrasis: estaban durmiendo"},
-      {word: "ἦν ἐληλυθώς", type: "perifrastica", desc: "Perífrasis: había venido (pluscuamperfecto)"},
-      {word: "γέγονεν πεπληρωμένον", type: "perifrastica", desc: "Perífrasis: ha sido cumplido"},
-      {word: "ἦν βεβλημένος", type: "perifrastica", desc: "Perífrasis: estaba echado (Juan 5:6)"}
+    const usos = [
+      // PROPÓSITO
+      {word: "ἵνα πιστεύσητε", type: "proposito", desc: "Propósito: para que crean (con ἵνα)"},
+      {word: "ἵνα κατηγορήσωσιν", type: "proposito", desc: "Propósito: para poder acusarlo (con ἵνα)"},
+      {word: "ἵνα μετανοῶσιν", type: "proposito", desc: "Propósito/contenido: que debían arrepentirse (con ἵνα)"},
+      {word: "ἵνα μὴ ἀθυμῶσιν", type: "proposito", desc: "Propósito negativo: para que no se desanimen (con ἵνα μή)"},
+      {word: "ἵνα ταῦτα ποιῇς", type: "proposito", desc: "Propósito: para que hagas estas cosas (con ἵνα)"},
+      
+      // CONDICIÓN
+      {word: "ἐὰν θέλῃς", type: "condicion", desc: "Condición: si quieres (con ἐάν)"},
+      {word: "ἐὰν πεσὼν προσκυνήσῃς", type: "condicion", desc: "Condición: si te postras y me adoras (con ἐάν)"},
+      {word: "ἐὰν ὁμολογῶμεν", type: "condicion", desc: "Condición: si confesamos (con ἐάν)"},
+      {word: "ἐάν τις περιπατῇ", type: "condicion", desc: "Condición general: si alguien camina (con ἐάν)"},
+      {word: "ἐπὰν εὕρητε", type: "condicion", desc: "Condición temporal: cuando hayan encontrado (con ἐπάν)"},
+      
+      // HORTATORIO
+      {word: "διέλθωμεν", type: "hortatorio", desc: "Hortatorio: pasemos al otro lado"},
+      {word: "προσευχώμεθα", type: "hortatorio", desc: "Hortatorio: oremos / vamos a orar"},
+      {word: "ἐκβάλω", type: "hortatorio", desc: "Hortatorio: deja que saque (1a sg)"},
+      
+      // DELIBERATIVO
+      {word: "τί φάγωμεν", type: "deliberativo", desc: "Deliberativo: ¿qué vamos a comer?"},
+      {word: "τί πίωμεν", type: "deliberativo", desc: "Deliberativo: ¿qué vamos a beber?"},
+      {word: "τί περιβαλώμεθα", type: "deliberativo", desc: "Deliberativo: ¿con qué vamos a vestirnos?"},
+      
+      // NEGACIÓN ENFÁTICA
+      {word: "οὐ μὴ ἀπόλωνται", type: "negacion", desc: "Negación enfática: de ninguna manera perecerán"},
+      {word: "οὐ μὴ γεύσωνται", type: "negacion", desc: "Negación enfática: ciertamente no probarán"}
     ];
 
-    let currentIndex = 0, correctCount = 0, streak = 0, maxStreak = 0, isAnswered = false, totalQuestions = construcciones.length;
+    let currentIndex = 0, correctCount = 0, streak = 0, maxStreak = 0, isAnswered = false, totalQuestions = usos.length;
 
     function shuffleArray(array) {
       for (let i = array.length - 1; i > 0; i--) {
@@ -122,7 +113,7 @@
       return array;
     }
 
-    let shuffledData = shuffleArray([...construcciones]);
+    let shuffledData = shuffleArray([...usos]);
 
     function loadQuestion(index) {
       const q = shuffledData[index];
@@ -135,48 +126,52 @@
       document.getElementById('total-q').textContent = totalQuestions;
       document.getElementById('currentWord').textContent = q.word;
 
+      document.getElementById('categories').innerHTML = `
+        <button class="category-btn" data-cat="proposito"><span class="emoji">🎯</span><span>Propósito</span></button>
+        <button class="category-btn" data-cat="condicion"><span class="emoji">❓</span><span>Condición</span></button>
+        <button class="category-btn" data-cat="hortatorio"><span class="emoji">📢</span><span>Hortatorio</span></button>
+        <button class="category-btn" data-cat="deliberativo"><span class="emoji">🤔</span><span>Deliberativo</span></button>
+        <button class="category-btn" data-cat="negacion"><span class="emoji">🚫</span><span>Negación Enfática</span></button>
+      `;
+
       document.querySelectorAll('.category-btn').forEach(btn => {
         btn.classList.remove('correct', 'wrong', 'disabled');
         btn.disabled = false;
+        btn.addEventListener('click', () => handleAnswer(btn, q));
       });
 
       document.getElementById('questionCard').style.animation = 'none';
       setTimeout(() => { document.getElementById('questionCard').style.animation = 'popIn 0.4s ease'; }, 10);
     }
 
-    document.querySelectorAll('.category-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        if (isAnswered) return;
-        const q = shuffledData[currentIndex];
-        const selected = btn.dataset.cat;
-        const correct = q.type;
+    function handleAnswer(btn, q) {
+      if (isAnswered) return;
+      isAnswered = true;
+      document.querySelectorAll('.category-btn').forEach(b => b.disabled = true);
+      const feedback = document.getElementById('feedback');
+      const selected = btn.dataset.cat;
+      const correct = q.type;
 
-        isAnswered = true;
-        document.querySelectorAll('.category-btn').forEach(b => b.disabled = true);
+      if (selected === correct) {
+        btn.classList.add('correct');
+        correctCount++; streak++;
+        if (streak > maxStreak) maxStreak = streak;
+        feedback.textContent = `✅ ¡Correcto! ${q.desc}` + (streak > 1 ? ` 🔥 Racha: ${streak}` : '');
+        feedback.className = 'feedback success show';
+      } else {
+        btn.classList.add('wrong');
+        streak = 0;
+        document.querySelectorAll('.category-btn').forEach(b => {
+          if (b.dataset.cat === correct) b.classList.add('correct');
+        });
+        feedback.textContent = `❌ Incorrecto. ${q.desc}`;
+        feedback.className = 'feedback error show';
+      }
 
-        const feedback = document.getElementById('feedback');
-
-        if (selected === correct) {
-          btn.classList.add('correct');
-          correctCount++; streak++;
-          if (streak > maxStreak) maxStreak = streak;
-          feedback.textContent = `✅ ¡Correcto! ${q.desc}` + (streak > 1 ? ` 🔥 Racha: ${streak}` : '');
-          feedback.className = 'feedback success show';
-        } else {
-          btn.classList.add('wrong');
-          streak = 0;
-          document.querySelectorAll('.category-btn').forEach(b => {
-            if (b.dataset.cat === correct) b.classList.add('correct');
-          });
-          feedback.textContent = `❌ Incorrecto. ${q.desc}`;
-          feedback.className = 'feedback error show';
-        }
-
-        document.getElementById('correct-count').textContent = correctCount;
-        document.getElementById('streak').textContent = streak;
-        document.getElementById('nextBtn').classList.add('show');
-      });
-    });
+      document.getElementById('correct-count').textContent = correctCount;
+      document.getElementById('streak').textContent = streak;
+      document.getElementById('nextBtn').classList.add('show');
+    }
 
     function nextQuestion() {
       if (currentIndex < totalQuestions - 1) { currentIndex++; loadQuestion(currentIndex); }
@@ -187,7 +182,7 @@
       document.getElementById('overlay').classList.add('active');
       const percentage = Math.round((correctCount / totalQuestions) * 100);
       let emoji = '📚', message = 'Sigue practicando, ¡lo lograrás!';
-      if (percentage >= 90) { emoji = '🌟'; message = '¡Excelente clasificador de construcciones!'; }
+      if (percentage >= 90) { emoji = '🌟'; message = '¡Excelente clasificador de subjuntivos!'; }
       else if (percentage >= 70) { emoji = '👍'; message = '¡Buen trabajo! Sigue así.'; }
       else if (percentage >= 50) { emoji = '💪'; message = 'Vas por buen camino, ¡sigue practicando!'; }
       const finalHTML = `
@@ -210,7 +205,7 @@
     function reiniciarJuego() {
       document.querySelector('.final-message')?.remove();
       document.getElementById('overlay').classList.remove('active');
-      shuffledData = shuffleArray([...construcciones]);
+      shuffledData = shuffleArray([...usos]);
       currentIndex = 0; correctCount = 0; streak = 0; maxStreak = 0; isAnswered = false;
       document.getElementById('correct-count').textContent = '0';
       document.getElementById('streak').textContent = '0';

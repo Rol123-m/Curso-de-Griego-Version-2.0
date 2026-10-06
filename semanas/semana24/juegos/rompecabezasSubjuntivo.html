@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Rompecabezas Perfecto | Semana 23</title>
+  <title>Rompecabezas Subjuntivo | Semana 24</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; user-select: none; -webkit-tap-highlight-color: transparent; }
     body { font-family: 'Segoe UI', 'Poppins', Arial, sans-serif; background: linear-gradient(145deg, #0a1628, #1a2a4a, #0d1f3c); min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 20px 15px 60px; color: white; }
@@ -54,8 +54,8 @@
 </head>
 <body>
   <img src="https://i.postimg.cc/wMJ2bCgV/mas-logos.jpg" class="logo" alt="Logo">
-  <h1>🧩 <span>Rompecabezas Perfecto</span></h1>
-  <div class="subtitle">✧ Semana 23: Participios Perfectos ✧</div>
+  <h1>🧩 <span>Rompecabezas Subjuntivo</span></h1>
+  <div class="subtitle">✧ Semana 24: Formas del Subjuntivo ✧</div>
 
   <div id="progress">
     <div class="stat">🧩 Puzzle <span id="current-q">1</span>/<span id="total-q">12</span></div>
@@ -64,11 +64,11 @@
 
   <div class="game-container">
     <div class="question-card" id="questionCard">
-      <div class="question-label">ARMA EL PARTICIPIO</div>
+      <div class="question-label">ARMA LA FORMA DEL SUBJUNTIVO</div>
       <div class="translation" id="translation"></div>
       <div class="pieces-container" id="piecesContainer"></div>
       <div class="assembly-area" id="assemblyArea">
-        <div class="placeholder">Toca las piezas para armar el participio</div>
+        <div class="placeholder">Toca las piezas para armar la forma verbal</div>
       </div>
       <div class="feedback" id="feedback"></div>
       <div class="controls">
@@ -83,18 +83,18 @@
 
   <script>
     const exercises = [
-      {parts:["λε","λυ","κώς"], answer:"λελυκώς", translation:"habiendo desatado (perfecto activo)"},
-      {parts:["λε","λυ","μένος"], answer:"λελυμένος", translation:"habiendo sido desatado (perfecto pasivo)"},
-      {parts:["γε","γραμ","μένος"], answer:"γεγραμμένος", translation:"habiendo sido escrito (perfecto pasivo)"},
-      {parts:["γε","γον","ώς"], answer:"γεγονώς", translation:"habiendo llegado a ser (2° perfecto)"},
-      {parts:["ἐ","λη","λυ","θώς"], answer:"ἐληλυθώς", translation:"habiendo venido (2° perfecto)"},
-      {parts:["εἰ","λη","φώς"], answer:"εἰληφώς", translation:"habiendo tomado (2° perfecto)"},
-      {parts:["ἀ","κη","κο","ώς"], answer:"ἀκηκοώς", translation:"habiendo oído (2° perfecto)"},
-      {parts:["εἰ","δώς"], answer:"εἰδώς", translation:"sabiendo (con significado presente)"},
-      {parts:["σε","σῳσ","μένοι"], answer:"σεσῳσμένοι", translation:"habiendo sido salvos (perfecto pasivo)"},
-      {parts:["πε","ποι","θό","τες"], answer:"πεποιθότες", translation:"habiendo confiado (perfecto activo)"},
-      {parts:["ἀ","νε","ῳ","γώς"], answer:"ἀνεῳγώς", translation:"habiendo abierto (2° perfecto)"},
-      {parts:["τε","θνη","κώς"], answer:"τεθνηκώς", translation:"habiendo muerto (perfecto activo)"}
+      {parts:["λύ","ω"], answer:"λύω", translation:"yo desate (subj. presente)"},
+      {parts:["λύ","ῃς"], answer:"λύῃς", translation:"tú desates"},
+      {parts:["λύ","ω","μεν"], answer:"λύωμεν", translation:"desatemos (hortatorio)"},
+      {parts:["λύ","σω"], answer:"λύσω", translation:"yo desate (subj. aoristo)"},
+      {parts:["λύ","σ","ῃς"], answer:"λύσῃς", translation:"tú desates (aoristo)"},
+      {parts:["λύ","σω","μεν"], answer:"λύσωμεν", translation:"desatemos (aoristo)"},
+      {parts:["λυ","θῶ"], answer:"λυθῶ", translation:"yo sea desatado (subj. pas.)"},
+      {parts:["πιστεύ","σω"], answer:"πιστεύσω", translation:"yo crea (subj. aoristo)"},
+      {parts:["ἀκού","σω","σιν"], answer:"ἀκούσωσιν", translation:"ellos oigan (subj. aoristo)"},
+      {parts:["ὦ"], answer:"ὦ", translation:"yo sea (subj. de εἰμί)"},
+      {parts:["ᾖς"], answer:"ᾖς", translation:"tú seas (subj. de εἰμί)"},
+      {parts:["ὦ","μεν"], answer:"ὦμεν", translation:"nosotros seamos (subj. de εἰμί)"}
     ];
 
     let currentIndex = 0, correctCount = 0, assembled = [], totalQuestions = exercises.length, isVerified = false;
@@ -142,7 +142,7 @@
 
     function updateAssemblyArea() {
       const area = document.getElementById('assemblyArea');
-      if (assembled.length === 0) { area.innerHTML = '<div class="placeholder">Toca las piezas para armar el participio</div>'; return; }
+      if (assembled.length === 0) { area.innerHTML = '<div class="placeholder">Toca las piezas para armar la forma verbal</div>'; return; }
       area.innerHTML = '';
       assembled.forEach((item, idx) => {
         const div = document.createElement('div');
@@ -192,7 +192,7 @@
       document.getElementById('overlay').classList.add('active');
       const percentage = Math.round((correctCount / totalQuestions) * 100);
       let emoji = '📚', message = 'Sigue practicando, ¡lo lograrás!';
-      if (percentage >= 90) { emoji = '🌟'; message = '¡Excelente armador de participios!'; }
+      if (percentage >= 90) { emoji = '🌟'; message = '¡Excelente armador de subjuntivos!'; }
       else if (percentage >= 70) { emoji = '👍'; message = '¡Buen trabajo! Sigue así.'; }
       else if (percentage >= 50) { emoji = '💪'; message = 'Vas por buen camino, ¡sigue practicando!'; }
       const finalHTML = `

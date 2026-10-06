@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Caza-Genitivos Absolutos | Semana 23</title>
+  <title>Caza-Subjuntivos | Semana 24</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; user-select: none; -webkit-tap-highlight-color: transparent; }
     body { font-family: 'Segoe UI', 'Poppins', Arial, sans-serif; background: linear-gradient(145deg, #0a1628, #1a2a4a, #0d1f3c); min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 20px 15px 60px; color: white; }
@@ -49,11 +49,11 @@
 </head>
 <body>
   <img src="https://i.postimg.cc/wMJ2bCgV/mas-logos.jpg" class="logo" alt="Logo">
-  <h1>🔍 <span>Caza-Genitivos Absolutos</span></h1>
-  <div class="subtitle">✧ Semana 23: Genitivos Absolutos ✧</div>
+  <h1>🔍 <span>Caza-Subjuntivos</span></h1>
+  <div class="subtitle">✧ Semana 24: El Modo Subjuntivo ✧</div>
 
   <div id="progress">
-    <div class="stat">📖 <span id="current-q">1</span>/<span id="total-q">10</span></div>
+    <div class="stat">📖 <span id="current-q">1</span>/<span id="total-q">12</span></div>
     <div class="stat">✅ <span id="correct-count">0</span></div>
     <div class="stat">💪 Racha: <span id="streak">0</span>🔥</div>
   </div>
@@ -72,16 +72,18 @@
 
   <script>
     const questions = [
-      {ref:"Marcos 14:43", text:["καὶ","εὐθὺς","ἔτι","αὐτοῦ","λαλοῦντος","παραγίνεται","Ἰούδας"], correct:"αὐτοῦ λαλοῦντος", translation:"mientras él hablaba"},
-      {ref:"Lucas 11:14", text:["καὶ","ἐγένετο","τοῦ","δαιμονίου","ἐξελθόντος","ἐλάλησεν","ὁ","κωφός"], correct:"τοῦ δαιμονίου ἐξελθόντος", translation:"cuando el demonio salió"},
-      {ref:"Mateo 14:15", text:["ὀψίας","δὲ","γενομένης","προσῆλθον","αὐτῷ","οἱ","μαθηταί"], correct:"ὀψίας γενομένης", translation:"al anochecer"},
-      {ref:"Mateo 26:47", text:["καὶ","ἔτι","αὐτοῦ","λαλοῦντος","ἰδοὺ","Ἰούδας","ἦλθεν"], correct:"αὐτοῦ λαλοῦντος", translation:"mientras él aún hablaba"},
-      {ref:"Juan 8:30", text:["ταῦτα","αὐτοῦ","λαλοῦντος","πολλοὶ","ἐπίστευσαν","εἰς","αὐτόν"], correct:"αὐτοῦ λαλοῦντος", translation:"mientras él hablaba"},
-      {ref:"Mateo 9:18", text:["ταῦτα","αὐτοῦ","λαλοῦντος","αὐτοῖς","ἰδοὺ","ἄρχων","προσεκύνει"], correct:"αὐτοῦ λαλοῦντος", translation:"mientras él hablaba"},
-      {ref:"Lucas 22:60", text:["καὶ","παραχρῆμα","ἔτι","λαλοῦντος","αὐτοῦ","ἐφώνησεν","ἀλέκτωρ"], correct:"λαλοῦντος αὐτοῦ", translation:"aún estaba hablando"},
-      {ref:"Hechos 22:2", text:["ἐγένετο","δὲ","αὐτοῦ","τὴν","Ἑβραΐδα","διαλέκτῳ","προσφωνοῦντος"], correct:"αὐτοῦ προσφωνοῦντος", translation:"cuando él habló"},
-      {ref:"Mateo 8:1", text:["καταβάντος","δὲ","αὐτοῦ","ἀπὸ","τοῦ","ὄρους","ἠκολούθησαν","ὄχλοι"], correct:"καταβάντος αὐτοῦ", translation:"cuando descendió"},
-      {ref:"Juan 21:4", text:["πρωΐας","δὲ","ἤδη","γενομένης","ἔστη","Ἰησοῦς","εἰς","τὸν","αἰγιαλόν"], correct:"πρωΐας γενομένης", translation:"al amanecer"}
+      {ref:"Juan 10:28", text:["καὶ","οὐ","μὴ","ἀπόλωνται","εἰς","τὸν","αἰῶνα"], correct:"ἀπόλωνται", translation:"perezcan (subjuntivo aoristo)"},
+      {ref:"Juan 20:31", text:["ταῦτα","δὲ","γέγραπται","ἵνα","πιστεύσητε"], correct:"πιστεύσητε", translation:"creáis (subj. aoristo con ἵνα)"},
+      {ref:"Mateo 4:9", text:["ταῦτά","σοι","πάντα","δώσω","ἐὰν","πεσὼν","προσκυνήσῃς","μοι"], correct:"προσκυνήσῃς", translation:"adores (subj. aoristo con ἐάν)"},
+      {ref:"1 Juan 1:9", text:["ἐὰν","ὁμολογῶμεν","τὰς","ἁμαρτίας","ἡμῶν"], correct:"ὁμολογῶμεν", translation:"confesamos (subj. presente)"},
+      {ref:"Marcos 4:35", text:["διέλθωμεν","εἰς","τὸ","πέραν"], correct:"διέλθωμεν", translation:"pasemos (subj. hortatorio)"},
+      {ref:"Mateo 6:31", text:["τί","φάγωμεν","ἢ","τί","πίωμεν"], correct:"φάγωμεν", translation:"comamos (subj. deliberativo)"},
+      {ref:"Mateo 8:2", text:["κύριε","ἐὰν","θέλῃς","δύνασαί","με","καθαρίσαι"], correct:"θέλῃς", translation:"quieras (subj. presente)"},
+      {ref:"Colosenses 3:21", text:["ἵνα","μὴ","ἀθυμῶσιν"], correct:"ἀθυμῶσιν", translation:"se desanimen (subj. con ἵνα μή)"},
+      {ref:"Marcos 9:1", text:["οὐ","μὴ","γεύσωνται","θανάτου"], correct:"γεύσωνται", translation:"prueben (subj. aoristo)"},
+      {ref:"Mateo 2:8", text:["ἐπὰν","δὲ","εὕρητε","ἀπαγγείλατέ","μοι"], correct:"εὕρητε", translation:"encontréis (subj. aoristo)"},
+      {ref:"Marcos 11:28", text:["τίς","σοι","ἔδωκεν","τὴν","ἐξουσίαν","ταύτην","ἵνα","ταῦτα","ποιῇς"], correct:"ποιῇς", translation:"hagas (subj. presente con ἵνα)"},
+      {ref:"Marcos 6:12", text:["ἐκήρυξαν","ἵνα","μετανοῶσιν"], correct:"μετανοῶσιν", translation:"se arrepientan (subj. presente)"}
     ];
 
     let currentIndex = 0, correctCount = 0, streak = 0, maxStreak = 0, isAnswered = false, totalQuestions = questions.length;
@@ -102,15 +104,11 @@
       document.getElementById('current-q').textContent = index + 1;
       document.getElementById('total-q').textContent = totalQuestions;
       document.getElementById('verseRef').textContent = '📖 ' + q.ref;
+      document.getElementById('verseText').innerHTML = q.text.map(w => `<span>${w}</span>`).join(' ');
 
-      const verseText = document.getElementById('verseText');
-      verseText.innerHTML = q.text.map(w => `<span>${w}</span>`).join(' ');
-
-      // Generar opciones (correcta + 2 genitivos absolutos de otras preguntas)
-      const allCorrect = questions.map(item => item.correct);
-      const distractors = allCorrect.filter(c => c !== q.correct).slice(0, 2);
+      const allWords = [...new Set(q.text)];
+      const distractors = allWords.filter(w => w !== q.correct && w.length > 3).slice(0, 3);
       const options = shuffleArray([q.correct, ...distractors]);
-
       const grid = document.getElementById('optionsGrid');
       grid.innerHTML = '';
       options.forEach(opt => {
@@ -129,7 +127,7 @@
       const selected = btn.dataset.value, correct = q.correct;
       document.querySelectorAll('.option-btn').forEach(b => b.classList.add('disabled'));
       document.querySelectorAll('#verseText span').forEach(span => {
-        if (q.correct.includes(span.textContent)) span.classList.add('highlight-correct');
+        if (span.textContent === correct) span.classList.add('highlight-correct');
       });
       if (selected === correct) {
         btn.classList.add('correct');
@@ -161,7 +159,7 @@
       document.getElementById('overlay').classList.add('active');
       const percentage = Math.round((correctCount / totalQuestions) * 100);
       let emoji = '📚', message = 'Sigue practicando, ¡lo lograrás!';
-      if (percentage >= 90) { emoji = '🕵️'; message = '¡Excelente detective de genitivos!'; }
+      if (percentage >= 90) { emoji = '🌟'; message = '¡Excelente cazador de subjuntivos!'; }
       else if (percentage >= 70) { emoji = '👍'; message = '¡Buen trabajo! Sigue así.'; }
       else if (percentage >= 50) { emoji = '💪'; message = 'Vas por buen camino, ¡sigue practicando!'; }
       const finalHTML = `
