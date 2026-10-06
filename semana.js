@@ -537,13 +537,30 @@ class SemanaManager {
         { titulo: 'Juego Integrador', url: 'semanas/semana22/juegos/juegoIntegrador.html', icono: '🎮', nota: 'Clasifica y Caza en un solo juego' }
     ]
 },
-            23: { 
-                titulo: "Participios Combinativos", 
-                tema: "Participios con artículo", 
-                recursos: [
-                    { tipo: 'html', titulo: 'Contenido semana 23', url: 'recursos-semana24.html', icono: '📚' }
-                ] 
-            },
+           23: {
+    titulo: "Participios Perfectos y Genitivos Absolutos",
+    tema: "Participio Perfecto, Genitivo Absoluto y Construcciones Perifrásticas",
+    recursos: [
+        { tipo: 'html', titulo: 'Introducción', url: 'semanas/semana23/html/1. Introduccion.html', icono: '1️⃣' },
+        { tipo: 'html', titulo: 'Ejemplo Exegético: Efesios 2:8', url: 'semanas/semana23/html/2. Ejemplo exegetico.html', icono: '2️⃣' },
+        { tipo: 'html', titulo: 'El Participio Perfecto', url: 'semanas/semana23/html/3. Participio perfecto.html', icono: '3️⃣' },
+        { tipo: 'html', titulo: 'Paradigmas', url: 'semanas/semana23/html/4. Paradigmas.html', icono: '4️⃣' },
+        { tipo: 'html', titulo: 'Genitivo Absoluto', url: 'semanas/semana23/html/5. Genitivo absoluto.html', icono: '5️⃣' },
+        { tipo: 'html', titulo: 'Construcciones Perifrásticas', url: 'semanas/semana23/html/6. Construcciones perifrasticas.html', icono: '6️⃣' },
+        { tipo: 'html', titulo: 'Segundo Perfecto', url: 'semanas/semana23/html/7. Segundo perfecto.html', icono: '7️⃣' },
+        { tipo: 'html', titulo: 'Vocabulario', url: 'semanas/semana23/html/8. Vocabulario.html', icono: '8️⃣' },
+        { tipo: 'html', titulo: 'Ejercicios', url: 'semanas/semana23/html/9. Ejercicios.html', icono: '9️⃣' },
+        { tipo: 'html', titulo: 'Vocabulario Semana 23', url: 'semanas/semana23/html/vocabularioSemana23.html', icono: '📖' }
+    ],
+    juegos: [
+        { titulo: 'Empareja las palabras', url: 'semanas/semana23/juegos/3. Empareja las palabras.html', icono: '🔄', nota: 'Toca la palabra griega y su traducción para emparejarlas' },
+        { titulo: 'Detective de Genitivos', url: 'semanas/semana23/juegos/detectiveGenitivos.html', icono: '🕵️', nota: 'Identifica los genitivos absolutos en versículos' },
+        { titulo: 'Clasifica Construcciones', url: 'semanas/semana23/juegos/clasificaConstrucciones.html', icono: '🎯', nota: 'Clasifica perfecto, genitivo y perífrasis' },
+        { titulo: 'Caza-Genitivos Absolutos', url: 'semanas/semana23/juegos/cazaGenitivoAbsoluto.html', icono: '🔍', nota: 'Encuentra el genitivo absoluto en cada versículo' },
+        { titulo: 'Rompecabezas Perfecto', url: 'semanas/semana23/juegos/rompecabezasPerfecto.html', icono: '🧩', nota: 'Arma el participio perfecto tocando las piezas' },
+        { titulo: 'Gran Repaso de Participios', url: 'semanas/semana23/juegos/juegoResumenParticipios.html', icono: '🏆', nota: 'Resumen de TODOS los participios: tipo, tiempo, voz y función' }
+    ]
+},
             24: { 
                 titulo: "Subjuntivo", 
                 tema: "Modo subjuntivo presente", 
