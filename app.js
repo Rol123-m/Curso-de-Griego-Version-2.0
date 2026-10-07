@@ -70,7 +70,7 @@ window.CONFIG = {
             25: "https://forms.gle/65CDNig8EU2VVUxq6",
             26: "https://forms.gle/NyZ7yC2L7jN36NEt6",
             27: "https://forms.gle/YQ4o5XAtR9eKMn7W8",
-            28: "https://forms.gle/EJEMPLO_ALFA_28",
+            28: "https://forms.gle/Tx6ToQtrbVcz9hE47",
             29: "https://forms.gle/EJEMPLO_ALFA_29",
             30: "https://forms.gle/EJEMPLO_ALFA_30"
         },
@@ -103,7 +103,7 @@ window.CONFIG = {
             25: "https://forms.gle/QjbqoVNnhsGgNKVx5",
             26: "https://forms.gle/fgK9L6Cxy5wsbfqf8",
             27: "https://forms.gle/QJZpy6GDUgAzwo3t5",
-            28: "https://forms.gle/EJEMPLO_BETA_28",
+            28: "https://forms.gle/Tx6ToQtrbVcz9hE47",
             29: "https://forms.gle/EJEMPLO_BETA_29",
             30: "https://forms.gle/EJEMPLO_BETA_30"
         },
@@ -136,7 +136,7 @@ window.CONFIG = {
             25: "https://forms.gle/c9qqjnAXndeEXmG68",
             26: "https://forms.gle/gysgtrGqZ7ajG4ja8",
             27: "https://forms.gle/JQjn3MK9sM5PHvAF9",
-            28: "https://forms.gle/EJEMPLO_GAMMA_28",
+            28: "https://forms.gle/Tx6ToQtrbVcz9hE47",
             29: "https://forms.gle/EJEMPLO_GAMMA_29",
             30: "https://forms.gle/EJEMPLO_GAMMA_30"
         }

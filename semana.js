@@ -658,13 +658,27 @@ class SemanaManager {
         { titulo: 'Gran Repaso de Verbos -μι', url: 'semanas/semana27/juegos/juegoResumenVerbosMi.html', icono: '🏆', nota: 'Resumen: clase, tiempo y persona' }
     ]
 },
-            28: { 
-                titulo: "Consolidación Final", 
-                tema: "Repaso completo de gramática", 
-                recursos: [
-                    { tipo: 'html', titulo: 'Contenido semana 28', url: 'recursos-semana28.html', icono: '📚' }
-                ] 
-            },
+           28: {
+    titulo: "Consolidación Final — Griego II",
+    tema: "Repaso integrador: verbos, participios, modos y conjugaciones atemáticas",
+    recursos: [
+        { tipo: 'html', titulo: 'Introducción a la Consolidación', url: 'semanas/semana28/html/1. Introduccion consolidacion.html', icono: '1️⃣' },
+        { tipo: 'html', titulo: 'Repaso de Verbos', url: 'semanas/semana28/html/2. Repaso de verbos.html', icono: '2️⃣' },
+        { tipo: 'html', titulo: 'Repaso de Participios', url: 'semanas/semana28/html/3. Repaso de participios.html', icono: '3️⃣' },
+        { tipo: 'html', titulo: 'Repaso de Modos No Indicativos', url: 'semanas/semana28/html/4. Repaso de modos no indicativos.html', icono: '4️⃣' },
+        { tipo: 'html', titulo: 'Repaso de Conjugaciones Atemáticas', url: 'semanas/semana28/html/5. Repaso de conjugaciones atematicas.html', icono: '5️⃣' },
+        { tipo: 'html', titulo: 'Cuadro General de Tiempos', url: 'semanas/semana28/html/6. Cuadro general de tiempos.html', icono: '6️⃣' },
+        { tipo: 'html', titulo: 'Estrategias de Traducción', url: 'semanas/semana28/html/7. Estrategias de traduccion.html', icono: '7️⃣' }
+        
+    ],
+    juegos: [
+        { titulo: 'Maratón de Verbos', url: 'semanas/semana28/juegos/1. Maraton de verbos.html', icono: '🏃', nota: 'Identifica los 6 tiempos verbales del griego' },
+        { titulo: 'Cazador de Participios', url: 'semanas/semana28/juegos/2. Cazador de participios.html', icono: '🎯', nota: 'Encuentra el participio en 15 versículos del NT' },
+        { titulo: 'Clasifica Modos', url: 'semanas/semana28/juegos/3. Clasifica modos.html', icono: '🔀', nota: 'Identifica indicativo, subjuntivo, imperativo, infinitivo y participio' },
+        { titulo: 'Conquista de las -μι', url: 'semanas/semana28/juegos/4. Conquista de las -μι.html', icono: '⚔️', nota: 'Domina las 4 clases de verbos en -μι' },
+        { titulo: 'Super Juego Integrador', url: 'semanas/semana28/juegos/5. Super juego integrador.html', icono: '🏆', nota: '¡TODO el griego II en un solo juego con 5 modos!' }
+    ]
+},
             29: { 
                 titulo: "Lectura Guiada I", 
                 tema: "Juan 1:1-18", 
