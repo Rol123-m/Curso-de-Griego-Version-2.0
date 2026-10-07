@@ -679,20 +679,20 @@ class SemanaManager {
         { titulo: 'Super Juego Integrador', url: 'semanas/semana28/juegos/5. Super juego integrador.html', icono: '🏆', nota: '¡TODO el griego II en un solo juego con 5 modos!' }
     ]
 },
-            29: { 
-                titulo: "Lectura Guiada I", 
-                tema: "Juan 1:1-18", 
-                recursos: [
-                    { tipo: 'html', titulo: 'Contenido lectura I', url: '#', icono: '📖' }
-                ] 
-            },
-            30: { 
-                titulo: "Lectura Guiada II", 
-                tema: "1 Juan 1:1-10 y examen final", 
-                recursos: [
-                    { tipo: 'html', titulo: 'Contenido lectura II', url: '#', icono: '📖' }
-                ] 
-            }
+          29: { titulo: "Lectura Guiada I", tema: "Juan 1:1-18",
+  recursos: [
+    { tipo:'html', titulo:'El Logos en el principio', url:'semanas/semana29/html/1. El Logos en el principio.html', icono:'1️⃣' },
+    { tipo:'html', titulo:'La Palabra hecha carne', url:'semanas/semana29/html/2. La Palabra hecha carne.html', icono:'2️⃣' },
+    { tipo:'html', titulo:'Video de la semana', url:'semanas/semana29/html/3. Video de la semana.html', icono:'🎬' } ],
+  juegos: [
+    { titulo:'Quiz de lectura', url:'semanas/semana29/juegos/quizLectura.html', icono:'🎯', nota:'Repasa Juan 1:1-18' } ] },
+30: { titulo: "Lectura Guiada II", tema: "1 Juan 1:1-10 y examen final",
+  recursos: [
+    { tipo:'html', titulo:'Lo que vimos y oímos', url:'semanas/semana30/html/1. Lo que vimos y oímos.html', icono:'1️⃣' },
+    { tipo:'html', titulo:'Dios es luz', url:'semanas/semana30/html/2. Dios es luz.html', icono:'2️⃣' },
+    { tipo:'html', titulo:'Video de la semana', url:'semanas/semana30/html/3. Video de la semana.html', icono:'🎬' } ],
+  juegos: [
+    { titulo:'Quiz de lectura', url:'semanas/semana30/juegos/quizLectura.html', icono:'🎯', nota:'Repasa 1 Juan 1:1-10' } ] }
         };
     }
 
