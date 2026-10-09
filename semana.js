@@ -464,7 +464,7 @@ class SemanaManager {
         { tipo: 'html', titulo: 'Ejercicios', url: 'semanas/semana19/html/8. Ejercicios.html', icono: '8️⃣' },
         { tipo: 'html', titulo: 'Credo Apostólico', url: 'semanas/semana19/html/9. Credo apostolico.html', icono: '9️⃣' },
         { tipo: 'html', titulo: 'Resumen y Tarea', url: 'semanas/semana19/html/10. Resumen y tarea.html', icono: '🔟' },
-        { tipo: 'html', titulo: 'Vocabulario Semana 19', url: 'semanas/semana19/html/vocabularioSemana19.html', icono: '📖' }
+        { tipo: 'html', titulo: 'Vocabulario Semana 19', url: 'semanas/semana19/html/11. vocabularioSemana19.html', icono: '📖' }
     ],
     juegos: [
         { titulo: 'Empareja las palabras', url: 'semanas/semana19/juegos/3. Empareja las palabras.html', icono: '🔄', nota: 'Toca la palabra griega y su traducción para emparejarlas' },
